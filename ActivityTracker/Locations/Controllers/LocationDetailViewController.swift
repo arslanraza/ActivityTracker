@@ -32,13 +32,17 @@ class LocationDetailViewController: UIViewController {
     return location?.recentActivities ?? []
   }
   
+  // MARK: Life Cycle methods
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     precondition(location != nil, "Location id should never be nil")
     
     tableView.register(MapTableViewCell.nib, forCellReuseIdentifier: MapTableViewCell.reuseIdentifier)
     tableView.register(ProfileInfoTableViewCell.nib, forCellReuseIdentifier: ProfileInfoTableViewCell.reuseIdentifier)
+    tableView.register(ActivityInfoTableViewCell.nib, forCellReuseIdentifier: ActivityInfoTableViewCell.reuseIdentifier)
     tableView.register(TableHeaderFooterView.nib, forHeaderFooterViewReuseIdentifier: TableHeaderFooterView.reuseIdentifier)
+    
     tableView.estimatedRowHeight = 200
     tableView.estimatedSectionHeaderHeight = 100
     
@@ -47,7 +51,6 @@ class LocationDetailViewController: UIViewController {
         error == nil else {
         return
       }
-      
       DispatchQueue.main.async {
         strongSelf.location = location
         strongSelf.tableView.reloadData()
@@ -57,6 +60,7 @@ class LocationDetailViewController: UIViewController {
   
 }
 
+// MARK: TableViewDataSource
 extension LocationDetailViewController: UITableViewDataSource {
   func numberOfSections(in tableView: UITableView) -> Int {
     return Section.count
@@ -87,13 +91,14 @@ extension LocationDetailViewController: UITableViewDataSource {
       return cell
       
     case .recentActivity:
-      break
+      let cell = tableView.dequeueReusableCell(withIdentifier: ActivityInfoTableViewCell.reuseIdentifier) as! ActivityInfoTableViewCell
+      cell.configure(with: (location?.recentActivities[indexPath.row])!)
+      return cell
     }
-    
-    return UITableViewCell()
   }
 }
 
+// MARK: TableViewDataDelegate
 extension LocationDetailViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

@@ -29,6 +29,8 @@
 		A83330A5205A236400B328F8 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83330A4205A236400B328F8 /* URLSessionDataTaskProtocol.swift */; };
 		A83330A7205A249200B328F8 /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83330A6205A249200B328F8 /* ResultTests.swift */; };
 		A83330A9205A255400B328F8 /* APIErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83330A8205A255400B328F8 /* APIErrorTests.swift */; };
+		A8477AAA205A80600067380A /* ActivityInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8477AA8205A80600067380A /* ActivityInfoTableViewCell.swift */; };
+		A8477AAB205A80600067380A /* ActivityInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8477AA9205A80600067380A /* ActivityInfoTableViewCell.xib */; };
 		A894D2A9205A087F00B2AB74 /* LocationSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A09A5A2059F41700CEA678 /* LocationSummaryTests.swift */; };
 		A894D2AA205A089800B2AB74 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = A8A09A5D2059F4AD00CEA678 /* locations.json */; };
 		A894D2AC205A0B8000B2AB74 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894D2AB205A0B8000B2AB74 /* Location.swift */; };
@@ -153,6 +155,8 @@
 		A83330A4205A236400B328F8 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
 		A83330A6205A249200B328F8 /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
 		A83330A8205A255400B328F8 /* APIErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTests.swift; sourceTree = "<group>"; };
+		A8477AA8205A80600067380A /* ActivityInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityInfoTableViewCell.swift; sourceTree = "<group>"; };
+		A8477AA9205A80600067380A /* ActivityInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityInfoTableViewCell.xib; sourceTree = "<group>"; };
 		A84C01902059FC1C00B5B51B /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84C01912059FC1C00B5B51B /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A894D2AB205A0B8000B2AB74 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -439,6 +443,8 @@
 				A8268E0F205A6F6D00F8DF78 /* TableHeaderFooterView.xib */,
 				A8268E13205A7B4C00F8DF78 /* ProfileInfoTableViewCell.swift */,
 				A8268E14205A7B4C00F8DF78 /* ProfileInfoTableViewCell.xib */,
+				A8477AA8205A80600067380A /* ActivityInfoTableViewCell.swift */,
+				A8477AA9205A80600067380A /* ActivityInfoTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -754,6 +760,7 @@
 			files = (
 				A8268E16205A7B4C00F8DF78 /* ProfileInfoTableViewCell.xib in Resources */,
 				A8A09A132059E85000CEA678 /* LaunchScreen.storyboard in Resources */,
+				A8477AAB205A80600067380A /* ActivityInfoTableViewCell.xib in Resources */,
 				A8268E10205A6F6D00F8DF78 /* TableHeaderFooterView.xib in Resources */,
 				A8A09A102059E85000CEA678 /* Assets.xcassets in Resources */,
 				A8A77AD7205A3A65003399A4 /* LocationTableViewCell.xib in Resources */,
@@ -981,6 +988,7 @@
 				A8268E0E205A6F6200F8DF78 /* TableHeaderFooterView.swift in Sources */,
 				A8268E15205A7B4C00F8DF78 /* ProfileInfoTableViewCell.swift in Sources */,
 				A8268E06205A670900F8DF78 /* MapTableViewCell.swift in Sources */,
+				A8477AAA205A80600067380A /* ActivityInfoTableViewCell.swift in Sources */,
 				A8A09A092059E85000CEA678 /* AppDelegate.swift in Sources */,
 				A8A77AD3205A3A13003399A4 /* UIView+Nib.swift in Sources */,
 				A8268E09205A6A3500F8DF78 /* Location+Coordinates.swift in Sources */,
