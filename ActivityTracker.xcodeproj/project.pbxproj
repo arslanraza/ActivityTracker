@@ -7,39 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		85E74FEEA04C1A6662D10222 /* Pods_ATLocationCoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA74A077F459A19D6E09EA1 /* Pods_ATLocationCoreTests.framework */; };
 		912F4C1D5B2912EB87FDC010 /* Pods_ActivityTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CBA692BE6191921ECBECDF /* Pods_ActivityTracker.framework */; };
+		A894D2A9205A087F00B2AB74 /* LocationSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A09A5A2059F41700CEA678 /* LocationSummaryTests.swift */; };
+		A894D2AA205A089800B2AB74 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = A8A09A5D2059F4AD00CEA678 /* locations.json */; };
 		A8A09A092059E85000CEA678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A09A082059E85000CEA678 /* AppDelegate.swift */; };
 		A8A09A0E2059E85000CEA678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A09A0C2059E85000CEA678 /* Main.storyboard */; };
 		A8A09A102059E85000CEA678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A09A0F2059E85000CEA678 /* Assets.xcassets */; };
 		A8A09A132059E85000CEA678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A09A112059E85000CEA678 /* LaunchScreen.storyboard */; };
 		A8A09A302059EF5100CEA678 /* LocationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A09A2F2059EF5100CEA678 /* LocationsListViewController.swift */; };
-		A8A09A3F2059F19B00CEA678 /* ATLocationCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A09A362059F19B00CEA678 /* ATLocationCore.framework */; };
 		A8A09A482059F19B00CEA678 /* ATLocationCore.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A09A382059F19B00CEA678 /* ATLocationCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8A09A4B2059F19B00CEA678 /* ATLocationCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A09A362059F19B00CEA678 /* ATLocationCore.framework */; };
 		A8A09A4C2059F19B00CEA678 /* ATLocationCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8A09A362059F19B00CEA678 /* ATLocationCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8A09A572059F28500CEA678 /* LocationSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A09A562059F28500CEA678 /* LocationSummary.swift */; };
-		A8A09A5B2059F41700CEA678 /* LocationSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A09A5A2059F41700CEA678 /* LocationSummaryTests.swift */; };
-		A8A09A5E2059F4AD00CEA678 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = A8A09A5D2059F4AD00CEA678 /* locations.json */; };
 		B1A66F209C092003FAC17D8E /* Pods_ActivityTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096F0B990B9F797AF8155F00 /* Pods_ActivityTrackerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		A8A09A1A2059E85000CEA678 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8A099FD2059E85000CEA678 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8A09A042059E85000CEA678;
-			remoteInfo = ActivityTracker;
-		};
-		A8A09A402059F19B00CEA678 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8A099FD2059E85000CEA678 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8A09A352059F19B00CEA678;
-			remoteInfo = ATLocationCore;
-		};
-		A8A09A422059F19B00CEA678 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8A099FD2059E85000CEA678 /* Project object */;
 			proxyType = 1;
@@ -78,6 +62,9 @@
 		87CBA692BE6191921ECBECDF /* Pods_ActivityTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B635376636A322B2D6E6BFC /* Pods-ActivityTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityTracker/Pods-ActivityTracker.release.xcconfig"; sourceTree = "<group>"; };
 		9DFAA4770D71E39B109F2D73 /* Pods-ActivityTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityTrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityTrackerTests/Pods-ActivityTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A691162C8EA6C9B8973BA6F0 /* Pods_ATLocationCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATLocationCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84C01902059FC1C00B5B51B /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84C01912059FC1C00B5B51B /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A09A052059E85000CEA678 /* ActivityTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A09A082059E85000CEA678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8A09A0D2059E85000CEA678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,8 +77,6 @@
 		A8A09A362059F19B00CEA678 /* ATLocationCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATLocationCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A09A382059F19B00CEA678 /* ATLocationCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATLocationCore.h; sourceTree = "<group>"; };
 		A8A09A392059F19B00CEA678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8A09A3E2059F19B00CEA678 /* ATLocationCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATLocationCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8A09A472059F19B00CEA678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8A09A562059F28500CEA678 /* LocationSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSummary.swift; sourceTree = "<group>"; };
 		A8A09A5A2059F41700CEA678 /* LocationSummaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSummaryTests.swift; sourceTree = "<group>"; };
 		A8A09A5D2059F4AD00CEA678 /* locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
@@ -123,15 +108,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8A09A3B2059F19B00CEA678 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8A09A3F2059F19B00CEA678 /* ATLocationCore.framework in Frameworks */,
-				85E74FEEA04C1A6662D10222 /* Pods_ATLocationCoreTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -154,7 +130,6 @@
 				A8A09A072059E85000CEA678 /* ActivityTracker */,
 				A8A09A1C2059E85000CEA678 /* ActivityTrackerTests */,
 				A8A09A372059F19B00CEA678 /* ATLocationCore */,
-				A8A09A442059F19B00CEA678 /* ATLocationCoreTests */,
 				A8A09A062059E85000CEA678 /* Products */,
 				0934209D4B8C967AD8EFC3AD /* Pods */,
 				D61C074B8507612740601B3E /* Frameworks */,
@@ -167,7 +142,6 @@
 				A8A09A052059E85000CEA678 /* ActivityTracker.app */,
 				A8A09A192059E85000CEA678 /* ActivityTrackerTests.xctest */,
 				A8A09A362059F19B00CEA678 /* ATLocationCore.framework */,
-				A8A09A3E2059F19B00CEA678 /* ATLocationCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +162,7 @@
 		A8A09A1C2059E85000CEA678 /* ActivityTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
+				A8A09A5C2059F49B00CEA678 /* Resources */,
 				A8A09A2E2059EE2600CEA678 /* Mocks */,
 				A8A09A2D2059EE2000CEA678 /* Tests */,
 				A8A09A1F2059E85000CEA678 /* Info.plist */,
@@ -230,6 +205,7 @@
 		A8A09A2D2059EE2000CEA678 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A8A09A5A2059F41700CEA678 /* LocationSummaryTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -251,24 +227,6 @@
 			path = ATLocationCore;
 			sourceTree = "<group>";
 		};
-		A8A09A442059F19B00CEA678 /* ATLocationCoreTests */ = {
-			isa = PBXGroup;
-			children = (
-				A8A09A5C2059F49B00CEA678 /* Resources */,
-				A8A09A542059F20B00CEA678 /* Tests */,
-				A8A09A472059F19B00CEA678 /* Info.plist */,
-			);
-			path = ATLocationCoreTests;
-			sourceTree = "<group>";
-		};
-		A8A09A542059F20B00CEA678 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				A8A09A5A2059F41700CEA678 /* LocationSummaryTests.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
 		A8A09A552059F24F00CEA678 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,9 +246,12 @@
 		D61C074B8507612740601B3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A84C01902059FC1C00B5B51B /* Nimble.framework */,
+				A84C01912059FC1C00B5B51B /* Quick.framework */,
 				87CBA692BE6191921ECBECDF /* Pods_ActivityTracker.framework */,
 				096F0B990B9F797AF8155F00 /* Pods_ActivityTrackerTests.framework */,
 				0CA74A077F459A19D6E09EA1 /* Pods_ATLocationCoreTests.framework */,
+				A691162C8EA6C9B8973BA6F0 /* Pods_ATLocationCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -370,28 +331,6 @@
 			productReference = A8A09A362059F19B00CEA678 /* ATLocationCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A8A09A3D2059F19B00CEA678 /* ATLocationCoreTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A8A09A512059F19B00CEA678 /* Build configuration list for PBXNativeTarget "ATLocationCoreTests" */;
-			buildPhases = (
-				BD86CB216195CCCCEB2DBBD8 /* [CP] Check Pods Manifest.lock */,
-				A8A09A3A2059F19B00CEA678 /* Sources */,
-				A8A09A3B2059F19B00CEA678 /* Frameworks */,
-				A8A09A3C2059F19B00CEA678 /* Resources */,
-				96C98FFC4FD466BA135264EC /* [CP] Embed Pods Frameworks */,
-				806FF1AC110B0546A70DE944 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A8A09A412059F19B00CEA678 /* PBXTargetDependency */,
-				A8A09A432059F19B00CEA678 /* PBXTargetDependency */,
-			);
-			name = ATLocationCoreTests;
-			productName = ATLocationCoreTests;
-			productReference = A8A09A3E2059F19B00CEA678 /* ATLocationCoreTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -416,12 +355,6 @@
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
-					A8A09A3D2059F19B00CEA678 = {
-						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
-						TestTargetID = A8A09A042059E85000CEA678;
-					};
 				};
 			};
 			buildConfigurationList = A8A09A002059E85000CEA678 /* Build configuration list for PBXProject "ActivityTracker" */;
@@ -440,7 +373,6 @@
 				A8A09A042059E85000CEA678 /* ActivityTracker */,
 				A8A09A182059E85000CEA678 /* ActivityTrackerTests */,
 				A8A09A352059F19B00CEA678 /* ATLocationCore */,
-				A8A09A3D2059F19B00CEA678 /* ATLocationCoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -460,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A894D2AA205A089800B2AB74 /* locations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,14 +400,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8A09A3C2059F19B00CEA678 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8A09A5E2059F4AD00CEA678 /* locations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,21 +477,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		806FF1AC110B0546A70DE944 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATLocationCoreTests/Pods-ATLocationCoreTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		86115D70F5FC66D3F100BBC2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -580,44 +490,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ActivityTracker/Pods-ActivityTracker-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		96C98FFC4FD466BA135264EC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ATLocationCoreTests/Pods-ATLocationCoreTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATLocationCoreTests/Pods-ATLocationCoreTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BD86CB216195CCCCEB2DBBD8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ATLocationCoreTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C8B0C034B6C00C4CC2C8B77B /* [CP] Copy Pods Resources */ = {
@@ -651,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A894D2A9205A087F00B2AB74 /* LocationSummaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,14 +535,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8A09A3A2059F19B00CEA678 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8A09A5B2059F41700CEA678 /* LocationSummaryTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -677,16 +542,6 @@
 			isa = PBXTargetDependency;
 			target = A8A09A042059E85000CEA678 /* ActivityTracker */;
 			targetProxy = A8A09A1A2059E85000CEA678 /* PBXContainerItemProxy */;
-		};
-		A8A09A412059F19B00CEA678 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A8A09A352059F19B00CEA678 /* ATLocationCore */;
-			targetProxy = A8A09A402059F19B00CEA678 /* PBXContainerItemProxy */;
-		};
-		A8A09A432059F19B00CEA678 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A8A09A042059E85000CEA678 /* ActivityTracker */;
-			targetProxy = A8A09A422059F19B00CEA678 /* PBXContainerItemProxy */;
 		};
 		A8A09A4A2059F19B00CEA678 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -945,45 +800,6 @@
 			};
 			name = Release;
 		};
-		A8A09A522059F19B00CEA678 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 784F88C30A27C8F736623E21 /* Pods-ATLocationCoreTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6KF8AM7J9K;
-				INFOPLIST_FILE = ATLocationCoreTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.ATLocationCoreTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActivityTracker.app/ActivityTracker";
-			};
-			name = Debug;
-		};
-		A8A09A532059F19B00CEA678 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C856625CDE100E25D864F39 /* Pods-ATLocationCoreTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6KF8AM7J9K;
-				INFOPLIST_FILE = ATLocationCoreTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.ATLocationCoreTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActivityTracker.app/ActivityTracker";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1019,15 +835,6 @@
 			buildConfigurations = (
 				A8A09A4E2059F19B00CEA678 /* Debug */,
 				A8A09A4F2059F19B00CEA678 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A8A09A512059F19B00CEA678 /* Build configuration list for PBXNativeTarget "ATLocationCoreTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A8A09A522059F19B00CEA678 /* Debug */,
-				A8A09A532059F19B00CEA678 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

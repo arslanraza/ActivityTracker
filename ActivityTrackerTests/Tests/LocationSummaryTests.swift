@@ -21,16 +21,25 @@ class LocationSummaryTests: QuickSpec {
         let data = try? Data(contentsOf: url!)
         
         it("should have data", closure: {
-          expect(data).to(beNil())
+          expect(data).notTo(beNil())
         })
         
-        it("should be properly serialized", closure: {
+        context("and when serialized", {
+          
           let decoder = JSONDecoder()
           let locations = try? decoder.decode([LocationSummary].self, from: data!)
           
-          expect(locations?.count).to(equal(5))
+          it("array should not be nil", closure: {
+            expect(locations).notTo(beNil())
+          })
+          
+          it("should have 5 elements", closure: {
+            expect(locations?.count).to(equal(5))
+          })
           
         })
+        
+       
       })
     }
   }
