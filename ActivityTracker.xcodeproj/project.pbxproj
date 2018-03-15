@@ -12,6 +12,12 @@
 		A8333088205A21B600B328F8 /* ATNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = A8333078205A21B600B328F8 /* ATNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A833308B205A21B600B328F8 /* ATNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8333076205A21B600B328F8 /* ATNetwork.framework */; };
 		A833308C205A21B600B328F8 /* ATNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8333076205A21B600B328F8 /* ATNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A8333099205A22A400B328F8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8333098205A22A400B328F8 /* Result.swift */; };
+		A833309B205A22D300B328F8 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A833309A205A22D300B328F8 /* APIError.swift */; };
+		A833309F205A230000B328F8 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A833309E205A230000B328F8 /* EndPoint.swift */; };
+		A83330A1205A233200B328F8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83330A0205A233200B328F8 /* APIClient.swift */; };
+		A83330A3205A235200B328F8 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83330A2205A235200B328F8 /* URLSessionProtocol.swift */; };
+		A83330A5205A236400B328F8 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83330A4205A236400B328F8 /* URLSessionDataTaskProtocol.swift */; };
 		A894D2A9205A087F00B2AB74 /* LocationSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A09A5A2059F41700CEA678 /* LocationSummaryTests.swift */; };
 		A894D2AA205A089800B2AB74 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = A8A09A5D2059F4AD00CEA678 /* locations.json */; };
 		A894D2AC205A0B8000B2AB74 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894D2AB205A0B8000B2AB74 /* Location.swift */; };
@@ -100,6 +106,12 @@
 		A8333079205A21B600B328F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A833307E205A21B600B328F8 /* ATNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8333087205A21B600B328F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8333098205A22A400B328F8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A833309A205A22D300B328F8 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		A833309E205A230000B328F8 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		A83330A0205A233200B328F8 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		A83330A2205A235200B328F8 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		A83330A4205A236400B328F8 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
 		A84C01902059FC1C00B5B51B /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84C01912059FC1C00B5B51B /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A894D2AB205A0B8000B2AB74 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -222,6 +234,10 @@
 		A8333095205A21CC00B328F8 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				A833309E205A230000B328F8 /* EndPoint.swift */,
+				A83330A0205A233200B328F8 /* APIClient.swift */,
+				A83330A2205A235200B328F8 /* URLSessionProtocol.swift */,
+				A83330A4205A236400B328F8 /* URLSessionDataTaskProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -229,6 +245,8 @@
 		A8333096205A21D300B328F8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				A8333098205A22A400B328F8 /* Result.swift */,
+				A833309A205A22D300B328F8 /* APIError.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -523,6 +541,7 @@
 				TargetAttributes = {
 					A8333075205A21B600B328F8 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					A833307D205A21B600B328F8 = {
@@ -720,6 +739,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83330A3205A235200B328F8 /* URLSessionProtocol.swift in Sources */,
+				A833309F205A230000B328F8 /* EndPoint.swift in Sources */,
+				A83330A5205A236400B328F8 /* URLSessionDataTaskProtocol.swift in Sources */,
+				A8333099205A22A400B328F8 /* Result.swift in Sources */,
+				A833309B205A22D300B328F8 /* APIError.swift in Sources */,
+				A83330A1205A233200B328F8 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -813,6 +838,7 @@
 		A833308E205A21B600B328F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -828,6 +854,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.ATNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -838,6 +865,7 @@
 		A833308F205A21B600B328F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
