@@ -37,6 +37,7 @@ class LocationDetailViewController: UIViewController {
     precondition(location != nil, "Location id should never be nil")
     
     tableView.register(MapTableViewCell.nib, forCellReuseIdentifier: MapTableViewCell.reuseIdentifier)
+    tableView.register(ProfileInfoTableViewCell.nib, forCellReuseIdentifier: ProfileInfoTableViewCell.reuseIdentifier)
     tableView.register(TableHeaderFooterView.nib, forHeaderFooterViewReuseIdentifier: TableHeaderFooterView.reuseIdentifier)
     tableView.estimatedRowHeight = 200
     tableView.estimatedSectionHeaderHeight = 100
@@ -81,7 +82,10 @@ extension LocationDetailViewController: UITableViewDataSource {
       return cell
       
     case .topRunners:
-      break
+      let cell = tableView.dequeueReusableCell(withIdentifier: ProfileInfoTableViewCell.reuseIdentifier) as! ProfileInfoTableViewCell
+      cell.configure(with: (location?.profiles[indexPath.row])!)
+      return cell
+      
     case .recentActivity:
       break
     }

@@ -15,6 +15,8 @@
 		A8268E0B205A6CE300F8DF78 /* MapTableViewCell+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8268E0A205A6CE300F8DF78 /* MapTableViewCell+Location.swift */; };
 		A8268E0E205A6F6200F8DF78 /* TableHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8268E0D205A6F6200F8DF78 /* TableHeaderFooterView.swift */; };
 		A8268E10205A6F6D00F8DF78 /* TableHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8268E0F205A6F6D00F8DF78 /* TableHeaderFooterView.xib */; };
+		A8268E15205A7B4C00F8DF78 /* ProfileInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8268E13205A7B4C00F8DF78 /* ProfileInfoTableViewCell.swift */; };
+		A8268E16205A7B4C00F8DF78 /* ProfileInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8268E14205A7B4C00F8DF78 /* ProfileInfoTableViewCell.xib */; };
 		A833307F205A21B600B328F8 /* ATNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8333076205A21B600B328F8 /* ATNetwork.framework */; };
 		A8333088205A21B600B328F8 /* ATNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = A8333078205A21B600B328F8 /* ATNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A833308B205A21B600B328F8 /* ATNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8333076205A21B600B328F8 /* ATNetwork.framework */; };
@@ -136,6 +138,8 @@
 		A8268E0A205A6CE300F8DF78 /* MapTableViewCell+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapTableViewCell+Location.swift"; sourceTree = "<group>"; };
 		A8268E0D205A6F6200F8DF78 /* TableHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderFooterView.swift; sourceTree = "<group>"; };
 		A8268E0F205A6F6D00F8DF78 /* TableHeaderFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderFooterView.xib; sourceTree = "<group>"; };
+		A8268E13205A7B4C00F8DF78 /* ProfileInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoTableViewCell.swift; sourceTree = "<group>"; };
+		A8268E14205A7B4C00F8DF78 /* ProfileInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileInfoTableViewCell.xib; sourceTree = "<group>"; };
 		A8333076205A21B600B328F8 /* ATNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8333078205A21B600B328F8 /* ATNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATNetwork.h; sourceTree = "<group>"; };
 		A8333079205A21B600B328F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -433,6 +437,8 @@
 				A8268E05205A670900F8DF78 /* MapTableViewCell.xib */,
 				A8268E0D205A6F6200F8DF78 /* TableHeaderFooterView.swift */,
 				A8268E0F205A6F6D00F8DF78 /* TableHeaderFooterView.xib */,
+				A8268E13205A7B4C00F8DF78 /* ProfileInfoTableViewCell.swift */,
+				A8268E14205A7B4C00F8DF78 /* ProfileInfoTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -746,6 +752,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8268E16205A7B4C00F8DF78 /* ProfileInfoTableViewCell.xib in Resources */,
 				A8A09A132059E85000CEA678 /* LaunchScreen.storyboard in Resources */,
 				A8268E10205A6F6D00F8DF78 /* TableHeaderFooterView.xib in Resources */,
 				A8A09A102059E85000CEA678 /* Assets.xcassets in Resources */,
@@ -972,6 +979,7 @@
 				A8A09A302059EF5100CEA678 /* LocationsListViewController.swift in Sources */,
 				A8A77ACA205A34D7003399A4 /* LocationsViewModel.swift in Sources */,
 				A8268E0E205A6F6200F8DF78 /* TableHeaderFooterView.swift in Sources */,
+				A8268E15205A7B4C00F8DF78 /* ProfileInfoTableViewCell.swift in Sources */,
 				A8268E06205A670900F8DF78 /* MapTableViewCell.swift in Sources */,
 				A8A09A092059E85000CEA678 /* AppDelegate.swift in Sources */,
 				A8A77AD3205A3A13003399A4 /* UIView+Nib.swift in Sources */,
