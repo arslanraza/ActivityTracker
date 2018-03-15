@@ -1,0 +1,32 @@
+[
+ {
+ "display_name"  : "Rockdale NSW 2216, Australia",
+ "id"  : 5,
+ "latitude"  : "-33.95082",
+ "longitude"  : "151.1388"
+ },
+ {
+ "display_name"  : "Melbourne VIC, Australia",
+ "id"  : 4,
+ "latitude"  : "-37.81411",
+ "longitude"  : "144.9633"
+ },
+ {
+ "display_name"  : "Chatswood NSW 2067, Australia",
+ "id"  : 3,
+ "latitude"  : "-33.79608",
+ "longitude"  : "151.1831"
+ },
+ {
+ "display_name"  : "Parramatta NSW, Australia",
+ "id"  : 2,
+ "latitude"  : "-33.81513",
+ "longitude"  : "151.0032"
+ },
+ {
+ "display_name"  : "Sydney NSW, Australia",
+ "id"  : 1,
+ "latitude"  : "-33.87365",
+ "longitude"  : "151.2069"
+ }
+ ]

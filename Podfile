@@ -12,5 +12,12 @@ target 'ActivityTracker' do
     pod 'Quick'
     pod 'Nimble'
   end
+  
+  target 'ATLocationCoreTests' do
+    inherit! :search_paths
+    # Pods for ATLocationCore testing
+    pod 'Quick'
+    pod 'Nimble'
+  end
 
 end

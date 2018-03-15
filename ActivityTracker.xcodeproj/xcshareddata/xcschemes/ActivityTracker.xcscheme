@@ -20,6 +20,34 @@
                ReferencedContainer = "container:ActivityTracker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A8A09A182059E85000CEA678"
+               BuildableName = "ActivityTrackerTests.xctest"
+               BlueprintName = "ActivityTrackerTests"
+               ReferencedContainer = "container:ActivityTracker.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A8A09A3D2059F19B00CEA678"
+               BuildableName = "ATLocationCoreTests.xctest"
+               BlueprintName = "ATLocationCoreTests"
+               ReferencedContainer = "container:ActivityTracker.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -36,6 +64,16 @@
                BlueprintIdentifier = "A8A09A182059E85000CEA678"
                BuildableName = "ActivityTrackerTests.xctest"
                BlueprintName = "ActivityTrackerTests"
+               ReferencedContainer = "container:ActivityTracker.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A8A09A3D2059F19B00CEA678"
+               BuildableName = "ATLocationCoreTests.xctest"
+               BlueprintName = "ATLocationCoreTests"
                ReferencedContainer = "container:ActivityTracker.xcodeproj">
             </BuildableReference>
          </TestableReference>
