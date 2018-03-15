@@ -66,6 +66,7 @@ extension LocationsListViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: LocationTableViewCell.reuseIdentifier) as! LocationTableViewCell
+    cell.configure(with: locations[indexPath.row])
     return cell
   }
 }
@@ -75,7 +76,9 @@ extension LocationsListViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return UITableViewAutomaticDimension
   }
+  
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
   }
+  
 }

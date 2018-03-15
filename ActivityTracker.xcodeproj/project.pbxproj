@@ -50,6 +50,7 @@
 		A8A77AD3205A3A13003399A4 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AD2205A3A13003399A4 /* UIView+Nib.swift */; };
 		A8A77AD6205A3A65003399A4 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AD4205A3A65003399A4 /* LocationTableViewCell.swift */; };
 		A8A77AD7205A3A65003399A4 /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A77AD5205A3A65003399A4 /* LocationTableViewCell.xib */; };
+		A8A77AD9205A3E24003399A4 /* LocationTableViewCell+Loctaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AD8205A3E24003399A4 /* LocationTableViewCell+Loctaion.swift */; };
 		A8B8E93E205A125F007D1C2D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E93D205A125F007D1C2D /* Activity.swift */; };
 		A8B8E940205A1266007D1C2D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E93F205A1266007D1C2D /* Profile.swift */; };
 		A8B8E942205A126B007D1C2D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E941205A126B007D1C2D /* Task.swift */; };
@@ -167,6 +168,7 @@
 		A8A77AD2205A3A13003399A4 /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
 		A8A77AD4205A3A65003399A4 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 		A8A77AD5205A3A65003399A4 /* LocationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
+		A8A77AD8205A3E24003399A4 /* LocationTableViewCell+Loctaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationTableViewCell+Loctaion.swift"; sourceTree = "<group>"; };
 		A8B8E93D205A125F007D1C2D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		A8B8E93F205A1266007D1C2D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		A8B8E941205A126B007D1C2D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -488,6 +490,7 @@
 			children = (
 				A8A77AD0205A3A08003399A4 /* UITableViewCell+ReuseIdentifier.swift */,
 				A8A77AD2205A3A13003399A4 /* UIView+Nib.swift */,
+				A8A77AD8205A3E24003399A4 /* LocationTableViewCell+Loctaion.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -925,6 +928,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A77AD9205A3E24003399A4 /* LocationTableViewCell+Loctaion.swift in Sources */,
 				A8A77AD6205A3A65003399A4 /* LocationTableViewCell.swift in Sources */,
 				A8A09A302059EF5100CEA678 /* LocationsListViewController.swift in Sources */,
 				A8A77ACA205A34D7003399A4 /* LocationsViewModel.swift in Sources */,
