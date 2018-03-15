@@ -34,6 +34,20 @@
                ReferencedContainer = "container:ActivityTracker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A833307D205A21B600B328F8"
+               BuildableName = "ATNetworkTests.xctest"
+               BlueprintName = "ATNetworkTests"
+               ReferencedContainer = "container:ActivityTracker.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -51,6 +65,16 @@
                BlueprintIdentifier = "A8A09A182059E85000CEA678"
                BuildableName = "ActivityTrackerTests.xctest"
                BlueprintName = "ActivityTrackerTests"
+               ReferencedContainer = "container:ActivityTracker.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A833307D205A21B600B328F8"
+               BuildableName = "ATNetworkTests.xctest"
+               BlueprintName = "ATNetworkTests"
                ReferencedContainer = "container:ActivityTracker.xcodeproj">
             </BuildableReference>
          </TestableReference>

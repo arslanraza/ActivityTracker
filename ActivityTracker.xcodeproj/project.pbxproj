@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		912F4C1D5B2912EB87FDC010 /* Pods_ActivityTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CBA692BE6191921ECBECDF /* Pods_ActivityTracker.framework */; };
+		A833307F205A21B600B328F8 /* ATNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8333076205A21B600B328F8 /* ATNetwork.framework */; };
+		A8333088205A21B600B328F8 /* ATNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = A8333078205A21B600B328F8 /* ATNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A833308B205A21B600B328F8 /* ATNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8333076205A21B600B328F8 /* ATNetwork.framework */; };
+		A833308C205A21B600B328F8 /* ATNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8333076205A21B600B328F8 /* ATNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A894D2A9205A087F00B2AB74 /* LocationSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A09A5A2059F41700CEA678 /* LocationSummaryTests.swift */; };
 		A894D2AA205A089800B2AB74 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = A8A09A5D2059F4AD00CEA678 /* locations.json */; };
 		A894D2AC205A0B8000B2AB74 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894D2AB205A0B8000B2AB74 /* Location.swift */; };
@@ -29,6 +33,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A8333080205A21B600B328F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8A099FD2059E85000CEA678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8333075205A21B600B328F8;
+			remoteInfo = ATNetwork;
+		};
+		A8333082205A21B600B328F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8A099FD2059E85000CEA678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8A09A042059E85000CEA678;
+			remoteInfo = ActivityTracker;
+		};
+		A8333089205A21B600B328F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8A099FD2059E85000CEA678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8333075205A21B600B328F8;
+			remoteInfo = ATNetwork;
+		};
 		A8A09A1A2059E85000CEA678 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8A099FD2059E85000CEA678 /* Project object */;
@@ -52,6 +77,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A833308C205A21B600B328F8 /* ATNetwork.framework in Embed Frameworks */,
 				A8A09A4C2059F19B00CEA678 /* ATLocationCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -69,6 +95,11 @@
 		9B635376636A322B2D6E6BFC /* Pods-ActivityTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityTracker/Pods-ActivityTracker.release.xcconfig"; sourceTree = "<group>"; };
 		9DFAA4770D71E39B109F2D73 /* Pods-ActivityTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityTrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityTrackerTests/Pods-ActivityTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A691162C8EA6C9B8973BA6F0 /* Pods_ATLocationCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATLocationCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8333076205A21B600B328F8 /* ATNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8333078205A21B600B328F8 /* ATNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATNetwork.h; sourceTree = "<group>"; };
+		A8333079205A21B600B328F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A833307E205A21B600B328F8 /* ATNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8333087205A21B600B328F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A84C01902059FC1C00B5B51B /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84C01912059FC1C00B5B51B /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A894D2AB205A0B8000B2AB74 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -96,11 +127,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A8333072205A21B600B328F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A833307B205A21B600B328F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A833307F205A21B600B328F8 /* ATNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8A09A022059E85000CEA678 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				912F4C1D5B2912EB87FDC010 /* Pods_ActivityTracker.framework in Frameworks */,
+				A833308B205A21B600B328F8 /* ATNetwork.framework in Frameworks */,
 				A8A09A4B2059F19B00CEA678 /* ATLocationCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +183,63 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A8333077205A21B600B328F8 /* ATNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				A8333097205A21D900B328F8 /* LocationFeed */,
+				A8333096205A21D300B328F8 /* Network */,
+				A8333095205A21CC00B328F8 /* Protocols */,
+				A8333078205A21B600B328F8 /* ATNetwork.h */,
+				A8333079205A21B600B328F8 /* Info.plist */,
+			);
+			path = ATNetwork;
+			sourceTree = "<group>";
+		};
+		A8333084205A21B600B328F8 /* ATNetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8333093205A21BE00B328F8 /* Mocks */,
+				A8333094205A21C300B328F8 /* Tests */,
+				A8333087205A21B600B328F8 /* Info.plist */,
+			);
+			path = ATNetworkTests;
+			sourceTree = "<group>";
+		};
+		A8333093205A21BE00B328F8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A8333094205A21C300B328F8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		A8333095205A21CC00B328F8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A8333096205A21D300B328F8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A8333097205A21D900B328F8 /* LocationFeed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocationFeed;
+			sourceTree = "<group>";
+		};
 		A894D2AF205A0F3000B2AB74 /* ATLocationCoreTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +255,8 @@
 				A8A09A072059E85000CEA678 /* ActivityTracker */,
 				A8A09A1C2059E85000CEA678 /* ActivityTrackerTests */,
 				A8A09A372059F19B00CEA678 /* ATLocationCore */,
+				A8333077205A21B600B328F8 /* ATNetwork */,
+				A8333084205A21B600B328F8 /* ATNetworkTests */,
 				A8A09A062059E85000CEA678 /* Products */,
 				0934209D4B8C967AD8EFC3AD /* Pods */,
 				D61C074B8507612740601B3E /* Frameworks */,
@@ -163,6 +269,8 @@
 				A8A09A052059E85000CEA678 /* ActivityTracker.app */,
 				A8A09A192059E85000CEA678 /* ActivityTrackerTests.xctest */,
 				A8A09A362059F19B00CEA678 /* ATLocationCore.framework */,
+				A8333076205A21B600B328F8 /* ATNetwork.framework */,
+				A833307E205A21B600B328F8 /* ATNetworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -285,6 +393,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		A8333073205A21B600B328F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8333088205A21B600B328F8 /* ATNetwork.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8A09A332059F19B00CEA678 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,6 +412,43 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		A8333075205A21B600B328F8 /* ATNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A833308D205A21B600B328F8 /* Build configuration list for PBXNativeTarget "ATNetwork" */;
+			buildPhases = (
+				A8333071205A21B600B328F8 /* Sources */,
+				A8333072205A21B600B328F8 /* Frameworks */,
+				A8333073205A21B600B328F8 /* Headers */,
+				A8333074205A21B600B328F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ATNetwork;
+			productName = ATNetwork;
+			productReference = A8333076205A21B600B328F8 /* ATNetwork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A833307D205A21B600B328F8 /* ATNetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8333090205A21B600B328F8 /* Build configuration list for PBXNativeTarget "ATNetworkTests" */;
+			buildPhases = (
+				A833307A205A21B600B328F8 /* Sources */,
+				A833307B205A21B600B328F8 /* Frameworks */,
+				A833307C205A21B600B328F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8333081205A21B600B328F8 /* PBXTargetDependency */,
+				A8333083205A21B600B328F8 /* PBXTargetDependency */,
+			);
+			name = ATNetworkTests;
+			productName = ATNetworkTests;
+			productReference = A833307E205A21B600B328F8 /* ATNetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A8A09A042059E85000CEA678 /* ActivityTracker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8A09A222059E85000CEA678 /* Build configuration list for PBXNativeTarget "ActivityTracker" */;
@@ -312,6 +465,7 @@
 			);
 			dependencies = (
 				A8A09A4A2059F19B00CEA678 /* PBXTargetDependency */,
+				A833308A205A21B600B328F8 /* PBXTargetDependency */,
 			);
 			name = ActivityTracker;
 			productName = ActivityTracker;
@@ -367,6 +521,15 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = ArkTechs;
 				TargetAttributes = {
+					A8333075205A21B600B328F8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A833307D205A21B600B328F8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A8A09A042059E85000CEA678;
+					};
 					A8A09A042059E85000CEA678 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -399,11 +562,27 @@
 				A8A09A042059E85000CEA678 /* ActivityTracker */,
 				A8A09A182059E85000CEA678 /* ActivityTrackerTests */,
 				A8A09A352059F19B00CEA678 /* ATLocationCore */,
+				A8333075205A21B600B328F8 /* ATNetwork */,
+				A833307D205A21B600B328F8 /* ATNetworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A8333074205A21B600B328F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A833307C205A21B600B328F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8A09A032059E85000CEA678 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -537,6 +716,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A8333071205A21B600B328F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A833307A205A21B600B328F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8A09A012059E85000CEA678 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -570,6 +763,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A8333081205A21B600B328F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8333075205A21B600B328F8 /* ATNetwork */;
+			targetProxy = A8333080205A21B600B328F8 /* PBXContainerItemProxy */;
+		};
+		A8333083205A21B600B328F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8A09A042059E85000CEA678 /* ActivityTracker */;
+			targetProxy = A8333082205A21B600B328F8 /* PBXContainerItemProxy */;
+		};
+		A833308A205A21B600B328F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8333075205A21B600B328F8 /* ATNetwork */;
+			targetProxy = A8333089205A21B600B328F8 /* PBXContainerItemProxy */;
+		};
 		A8A09A1B2059E85000CEA678 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A8A09A042059E85000CEA678 /* ActivityTracker */;
@@ -602,6 +810,90 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A833308E205A21B600B328F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6KF8AM7J9K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ATNetwork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.ATNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A833308F205A21B600B328F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6KF8AM7J9K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ATNetwork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.ATNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A8333091205A21B600B328F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6KF8AM7J9K;
+				INFOPLIST_FILE = ATNetworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.ATNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActivityTracker.app/ActivityTracker";
+			};
+			name = Debug;
+		};
+		A8333092205A21B600B328F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6KF8AM7J9K;
+				INFOPLIST_FILE = ATNetworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.ATNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActivityTracker.app/ActivityTracker";
+			};
+			name = Release;
+		};
 		A8A09A202059E85000CEA678 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -835,6 +1127,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A833308D205A21B600B328F8 /* Build configuration list for PBXNativeTarget "ATNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A833308E205A21B600B328F8 /* Debug */,
+				A833308F205A21B600B328F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8333090205A21B600B328F8 /* Build configuration list for PBXNativeTarget "ATNetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8333091205A21B600B328F8 /* Debug */,
+				A8333092205A21B600B328F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A8A09A002059E85000CEA678 /* Build configuration list for PBXProject "ActivityTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
