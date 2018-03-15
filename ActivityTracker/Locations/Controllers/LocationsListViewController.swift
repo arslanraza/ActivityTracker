@@ -41,6 +41,7 @@ class LocationsListViewController: UIViewController {
       let locationDetailController = segue.destination as? LocationDetailViewController,
       let _ = selectedLocation {
       locationDetailController.locationID = selectedLocation?.id
+      locationDetailController.location = Location.init(selectedLocation!)
     }
   }
   

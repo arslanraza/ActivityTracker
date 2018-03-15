@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		5CED4AF077D87923A21FD899 /* Pods_ATNetworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9051391AAF96576716DF8B62 /* Pods_ATNetworkTests.framework */; };
 		912F4C1D5B2912EB87FDC010 /* Pods_ActivityTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CBA692BE6191921ECBECDF /* Pods_ActivityTracker.framework */; };
+		A8268E06205A670900F8DF78 /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8268E04205A670900F8DF78 /* MapTableViewCell.swift */; };
+		A8268E07205A670900F8DF78 /* MapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8268E05205A670900F8DF78 /* MapTableViewCell.xib */; };
+		A8268E09205A6A3500F8DF78 /* Location+Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8268E08205A6A3500F8DF78 /* Location+Coordinates.swift */; };
+		A8268E0B205A6CE300F8DF78 /* MapTableViewCell+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8268E0A205A6CE300F8DF78 /* MapTableViewCell+Location.swift */; };
+		A8268E0E205A6F6200F8DF78 /* TableHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8268E0D205A6F6200F8DF78 /* TableHeaderFooterView.swift */; };
+		A8268E10205A6F6D00F8DF78 /* TableHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8268E0F205A6F6D00F8DF78 /* TableHeaderFooterView.xib */; };
 		A833307F205A21B600B328F8 /* ATNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8333076205A21B600B328F8 /* ATNetwork.framework */; };
 		A8333088205A21B600B328F8 /* ATNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = A8333078205A21B600B328F8 /* ATNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A833308B205A21B600B328F8 /* ATNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8333076205A21B600B328F8 /* ATNetwork.framework */; };
@@ -46,7 +52,7 @@
 		A8A77AC8205A3441003399A4 /* ATLocationCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A09A362059F19B00CEA678 /* ATLocationCore.framework */; };
 		A8A77ACA205A34D7003399A4 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AC9205A34D7003399A4 /* LocationsViewModel.swift */; };
 		A8A77ACD205A37D0003399A4 /* LocationsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77ACC205A37D0003399A4 /* LocationsListViewControllerTests.swift */; };
-		A8A77AD1205A3A08003399A4 /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AD0205A3A08003399A4 /* UITableViewCell+ReuseIdentifier.swift */; };
+		A8A77AD1205A3A08003399A4 /* UIView+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AD0205A3A08003399A4 /* UIView+ReuseIdentifier.swift */; };
 		A8A77AD3205A3A13003399A4 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AD2205A3A13003399A4 /* UIView+Nib.swift */; };
 		A8A77AD6205A3A65003399A4 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AD4205A3A65003399A4 /* LocationTableViewCell.swift */; };
 		A8A77AD7205A3A65003399A4 /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A77AD5205A3A65003399A4 /* LocationTableViewCell.xib */; };
@@ -124,6 +130,12 @@
 		9B635376636A322B2D6E6BFC /* Pods-ActivityTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityTracker/Pods-ActivityTracker.release.xcconfig"; sourceTree = "<group>"; };
 		9DFAA4770D71E39B109F2D73 /* Pods-ActivityTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityTrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityTrackerTests/Pods-ActivityTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A691162C8EA6C9B8973BA6F0 /* Pods_ATLocationCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATLocationCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8268E04205A670900F8DF78 /* MapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
+		A8268E05205A670900F8DF78 /* MapTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapTableViewCell.xib; sourceTree = "<group>"; };
+		A8268E08205A6A3500F8DF78 /* Location+Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Coordinates.swift"; sourceTree = "<group>"; };
+		A8268E0A205A6CE300F8DF78 /* MapTableViewCell+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapTableViewCell+Location.swift"; sourceTree = "<group>"; };
+		A8268E0D205A6F6200F8DF78 /* TableHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderFooterView.swift; sourceTree = "<group>"; };
+		A8268E0F205A6F6D00F8DF78 /* TableHeaderFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderFooterView.xib; sourceTree = "<group>"; };
 		A8333076205A21B600B328F8 /* ATNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8333078205A21B600B328F8 /* ATNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATNetwork.h; sourceTree = "<group>"; };
 		A8333079205A21B600B328F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -167,7 +179,7 @@
 		A8A77AC6205A2E74003399A4 /* LocationsApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsApiClient.swift; sourceTree = "<group>"; };
 		A8A77AC9205A34D7003399A4 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		A8A77ACC205A37D0003399A4 /* LocationsListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListViewControllerTests.swift; sourceTree = "<group>"; };
-		A8A77AD0205A3A08003399A4 /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
+		A8A77AD0205A3A08003399A4 /* UIView+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		A8A77AD2205A3A13003399A4 /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
 		A8A77AD4205A3A65003399A4 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 		A8A77AD5205A3A65003399A4 /* LocationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
@@ -242,6 +254,15 @@
 				BEE0708D74A9D5E98E19C06C /* Pods-ATNetworkTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8268E0C205A6CE500F8DF78 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A8A77AD8205A3E24003399A4 /* LocationTableViewCell+Loctaion.swift */,
+				A8268E0A205A6CE300F8DF78 /* MapTableViewCell+Location.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		A8333077205A21B600B328F8 /* ATNetwork */ = {
@@ -408,6 +429,10 @@
 			children = (
 				A8A77AD4205A3A65003399A4 /* LocationTableViewCell.swift */,
 				A8A77AD5205A3A65003399A4 /* LocationTableViewCell.xib */,
+				A8268E04205A670900F8DF78 /* MapTableViewCell.swift */,
+				A8268E05205A670900F8DF78 /* MapTableViewCell.xib */,
+				A8268E0D205A6F6200F8DF78 /* TableHeaderFooterView.swift */,
+				A8268E0F205A6F6D00F8DF78 /* TableHeaderFooterView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -497,9 +522,10 @@
 		A8A77ACF205A39ED003399A4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A8A77AD0205A3A08003399A4 /* UITableViewCell+ReuseIdentifier.swift */,
+				A8268E0C205A6CE500F8DF78 /* TableViewCell */,
 				A8A77AD2205A3A13003399A4 /* UIView+Nib.swift */,
-				A8A77AD8205A3E24003399A4 /* LocationTableViewCell+Loctaion.swift */,
+				A8A77AD0205A3A08003399A4 /* UIView+ReuseIdentifier.swift */,
+				A8268E08205A6A3500F8DF78 /* Location+Coordinates.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -721,8 +747,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8A09A132059E85000CEA678 /* LaunchScreen.storyboard in Resources */,
+				A8268E10205A6F6D00F8DF78 /* TableHeaderFooterView.xib in Resources */,
 				A8A09A102059E85000CEA678 /* Assets.xcassets in Resources */,
 				A8A77AD7205A3A65003399A4 /* LocationTableViewCell.xib in Resources */,
+				A8268E07205A670900F8DF78 /* MapTableViewCell.xib in Resources */,
 				A8A09A0E2059E85000CEA678 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -943,9 +971,13 @@
 				A8A77AD6205A3A65003399A4 /* LocationTableViewCell.swift in Sources */,
 				A8A09A302059EF5100CEA678 /* LocationsListViewController.swift in Sources */,
 				A8A77ACA205A34D7003399A4 /* LocationsViewModel.swift in Sources */,
+				A8268E0E205A6F6200F8DF78 /* TableHeaderFooterView.swift in Sources */,
+				A8268E06205A670900F8DF78 /* MapTableViewCell.swift in Sources */,
 				A8A09A092059E85000CEA678 /* AppDelegate.swift in Sources */,
 				A8A77AD3205A3A13003399A4 /* UIView+Nib.swift in Sources */,
-				A8A77AD1205A3A08003399A4 /* UITableViewCell+ReuseIdentifier.swift in Sources */,
+				A8268E09205A6A3500F8DF78 /* Location+Coordinates.swift in Sources */,
+				A8A77AD1205A3A08003399A4 /* UIView+ReuseIdentifier.swift in Sources */,
+				A8268E0B205A6CE300F8DF78 /* MapTableViewCell+Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

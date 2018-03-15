@@ -35,3 +35,18 @@ public struct Location: Codable {
   }
 }
 
+extension Location {
+  public init(_ locationSummary: LocationSummary) {
+    
+    self.init(id: locationSummary.id,
+              displayName: locationSummary.displayName,
+              lat: locationSummary.lat,
+              lan: locationSummary.lan,
+              workerCount: 0,
+              workerIDs: [],
+              recentActivities: [],
+              profiles: [],
+              tasks: [])
+  }
+}
+

@@ -1,5 +1,5 @@
 //
-//  LocationTableViewCell.swift
+//  MapTableViewCell.swift
 //  ActivityTracker
 //
 //  Created by Arslan Raza on 15/3/18.
@@ -9,14 +9,9 @@
 import UIKit
 import MapKit
 
-class LocationTableViewCell: UITableViewCell {
+class MapTableViewCell: UITableViewCell {
   
-  // MARK: Outlets
-  @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var mapView: MKMapView!
-  @IBOutlet weak var actionButton: UIButton!
-  
-  // MARK: LifeCycle Methods
   override func awakeFromNib() {
     super.awakeFromNib()
     mapView.layer.cornerRadius = 8
