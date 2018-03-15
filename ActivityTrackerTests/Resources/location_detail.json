@@ -1,0 +1,98 @@
+{
+  "display_name"  : "Sydney NSW, Australia",
+  "id"  : 1,
+  "latitude"  : "-33.87365",
+  "longitude"  : "151.2069",
+  "worker_count" : 4,
+  "worker_ids" : [10,11],
+  "recent_activity" : [
+                       {
+                       "task_id" : 6,
+                       "profile_id" : 11,
+                       "message" : "{profileName} commented on {taskName}",
+                       "created_at" : "",
+                       "event" : "comment"
+                       },
+                       {
+                       "task_id" : 7,
+                       "profile_id" : 9,
+                       "message" : "{profileName} was assigned {taskName}",
+                       "created_at" : "",
+                       "event" : "comment"
+                       },
+                       {
+                       "task_id" : 7,
+                       "profile_id" : 8,
+                       "message" : "{profileName} made an offer on {taskName}",
+                       "created_at" : "",
+                       "event" : "offer"
+                       
+                       },
+                       {
+                       "task_id" : 7,
+                       "profile_id" : 10,
+                       "message" : "{profileName} posted {taskName}",
+                       "created_at" : "",
+                       "event" : "post"
+                       },
+                       {
+                       "task_id" : 6,
+                       "profile_id" : 10,
+                       "message" : "{profileName} posted {taskName}",
+                       "created_at" : "",
+                       "event" : "post"
+                       }
+                       ],
+  "profiles" : [
+                {
+                "id": 8,
+                "avatar_mini_url": "/img/8.jpg",
+                "first_name": "Leonard",
+                "description":"experimental physicists",
+                "rating": 5,
+                "location_id":4
+                },
+                {
+                "id": 9,
+                "avatar_mini_url": "/img/9.jpg",
+                "first_name": "Penny",
+                "description":"cheesecake factory",
+                "rating": 4,
+                "location_id":2
+                },
+                {
+                "id": 10,
+                "avatar_mini_url": "/img/10.jpg",
+                "first_name": "Raj",
+                "description":"...",
+                "rating": 3.5,
+                "location_id":1
+                },
+                {
+                "id": 11,
+                "avatar_mini_url": "/img/11.jpg",
+                "first_name": "Howard",
+                "description":"i have a master's degree from mit",
+                "rating": 3,
+                "location_id":1
+                }
+                ],
+  "tasks" : [
+             {
+             "id": 6,
+             "name": "Flyer Distribution",
+             "description": "Looking for someone to distriute 500 small packs.",
+             "state": "posted",
+             "poster_id": 10,
+             "worker_id": null
+             },
+             {
+             "id": 7,
+             "name": "Face painter needed",
+             "description": "Looking for a creative individual that's available for 2 hours for a 5 year old girl's birthday.",
+             "state": "assigned",
+             "poster_id": 10,
+             "worker_id": 9
+             }
+             ]
+}

@@ -10,6 +10,9 @@
 		912F4C1D5B2912EB87FDC010 /* Pods_ActivityTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CBA692BE6191921ECBECDF /* Pods_ActivityTracker.framework */; };
 		A894D2A9205A087F00B2AB74 /* LocationSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A09A5A2059F41700CEA678 /* LocationSummaryTests.swift */; };
 		A894D2AA205A089800B2AB74 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = A8A09A5D2059F4AD00CEA678 /* locations.json */; };
+		A894D2AC205A0B8000B2AB74 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894D2AB205A0B8000B2AB74 /* Location.swift */; };
+		A894D2AE205A0F1F00B2AB74 /* location_detail.json in Resources */ = {isa = PBXBuildFile; fileRef = A894D2AD205A0F1F00B2AB74 /* location_detail.json */; };
+		A894D2B1205A0F5800B2AB74 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894D2B0205A0F5800B2AB74 /* LocationTests.swift */; };
 		A8A09A092059E85000CEA678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A09A082059E85000CEA678 /* AppDelegate.swift */; };
 		A8A09A0E2059E85000CEA678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A09A0C2059E85000CEA678 /* Main.storyboard */; };
 		A8A09A102059E85000CEA678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A09A0F2059E85000CEA678 /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 		A8A09A4B2059F19B00CEA678 /* ATLocationCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A09A362059F19B00CEA678 /* ATLocationCore.framework */; };
 		A8A09A4C2059F19B00CEA678 /* ATLocationCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8A09A362059F19B00CEA678 /* ATLocationCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8A09A572059F28500CEA678 /* LocationSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A09A562059F28500CEA678 /* LocationSummary.swift */; };
+		A8B8E93E205A125F007D1C2D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E93D205A125F007D1C2D /* Activity.swift */; };
+		A8B8E940205A1266007D1C2D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E93F205A1266007D1C2D /* Profile.swift */; };
+		A8B8E942205A126B007D1C2D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E941205A126B007D1C2D /* Task.swift */; };
 		B1A66F209C092003FAC17D8E /* Pods_ActivityTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096F0B990B9F797AF8155F00 /* Pods_ActivityTrackerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +71,9 @@
 		A691162C8EA6C9B8973BA6F0 /* Pods_ATLocationCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATLocationCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84C01902059FC1C00B5B51B /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84C01912059FC1C00B5B51B /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A894D2AB205A0B8000B2AB74 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A894D2AD205A0F1F00B2AB74 /* location_detail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = location_detail.json; sourceTree = "<group>"; };
+		A894D2B0205A0F5800B2AB74 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		A8A09A052059E85000CEA678 /* ActivityTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A09A082059E85000CEA678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8A09A0D2059E85000CEA678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +89,9 @@
 		A8A09A562059F28500CEA678 /* LocationSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSummary.swift; sourceTree = "<group>"; };
 		A8A09A5A2059F41700CEA678 /* LocationSummaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSummaryTests.swift; sourceTree = "<group>"; };
 		A8A09A5D2059F4AD00CEA678 /* locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		A8B8E93D205A125F007D1C2D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		A8B8E93F205A1266007D1C2D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		A8B8E941205A126B007D1C2D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		FB06AFF6E06E613A7EFA9036 /* Pods-ActivityTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityTracker/Pods-ActivityTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +134,15 @@
 				1C856625CDE100E25D864F39 /* Pods-ATLocationCoreTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A894D2AF205A0F3000B2AB74 /* ATLocationCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8A09A5A2059F41700CEA678 /* LocationSummaryTests.swift */,
+				A894D2B0205A0F5800B2AB74 /* LocationTests.swift */,
+			);
+			path = ATLocationCoreTests;
 			sourceTree = "<group>";
 		};
 		A8A099FC2059E85000CEA678 = {
@@ -205,7 +226,7 @@
 		A8A09A2D2059EE2000CEA678 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				A8A09A5A2059F41700CEA678 /* LocationSummaryTests.swift */,
+				A894D2AF205A0F3000B2AB74 /* ATLocationCoreTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -231,6 +252,10 @@
 			isa = PBXGroup;
 			children = (
 				A8A09A562059F28500CEA678 /* LocationSummary.swift */,
+				A894D2AB205A0B8000B2AB74 /* Location.swift */,
+				A8B8E93D205A125F007D1C2D /* Activity.swift */,
+				A8B8E93F205A1266007D1C2D /* Profile.swift */,
+				A8B8E941205A126B007D1C2D /* Task.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -239,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				A8A09A5D2059F4AD00CEA678 /* locations.json */,
+				A894D2AD205A0F1F00B2AB74 /* location_detail.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -393,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A894D2AA205A089800B2AB74 /* locations.json in Resources */,
+				A894D2AE205A0F1F00B2AB74 /* location_detail.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +550,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A894D2B1205A0F5800B2AB74 /* LocationTests.swift in Sources */,
 				A894D2A9205A087F00B2AB74 /* LocationSummaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +559,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B8E93E205A125F007D1C2D /* Activity.swift in Sources */,
+				A8B8E940205A1266007D1C2D /* Profile.swift in Sources */,
+				A8B8E942205A126B007D1C2D /* Task.swift in Sources */,
+				A894D2AC205A0B8000B2AB74 /* Location.swift in Sources */,
 				A8A09A572059F28500CEA678 /* LocationSummary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
