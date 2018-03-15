@@ -17,6 +17,12 @@ target 'ActivityTracker' do
     test_pods
   end
   
+  target 'ATNetworkTests' do
+    inherit! :search_paths
+    # Pods for testing
+    test_pods
+  end
+  
 end
 
 
