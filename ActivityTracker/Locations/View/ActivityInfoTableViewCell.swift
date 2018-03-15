@@ -19,13 +19,5 @@ class ActivityInfoTableViewCell: UITableViewCell {
     super.awakeFromNib()
     descriptionLabel.numberOfLines = 0
   }
-  
-}
-
-extension ActivityInfoTableViewCell {
-  func configure(with activity: Activity) {
-    descriptionLabel.text = activity.message
-    typeLabel.text = activity.event
-  }
 }
 

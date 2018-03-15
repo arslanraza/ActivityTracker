@@ -20,19 +20,4 @@ class ProfileInfoTableViewCell: UITableViewCell {
     super.awakeFromNib()
     descriptionLabel.numberOfLines = 0
   }
-  
-  override func setSelected(_ selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
-    
-    // Configure the view for the selected state
-  }
-  
-}
-
-extension ProfileInfoTableViewCell {
-  func configure(with profile: Profile) {
-    nameLabel.text = profile.firstName
-    ratingLabel.text = String(profile.rating)
-    descriptionLabel.text = profile.description
-  }
 }

@@ -38,6 +38,8 @@ class LocationDetailViewController: UIViewController {
     super.viewDidLoad()
     precondition(location != nil, "Location id should never be nil")
     
+    title = location?.displayName
+    
     tableView.register(MapTableViewCell.nib, forCellReuseIdentifier: MapTableViewCell.reuseIdentifier)
     tableView.register(ProfileInfoTableViewCell.nib, forCellReuseIdentifier: ProfileInfoTableViewCell.reuseIdentifier)
     tableView.register(ActivityInfoTableViewCell.nib, forCellReuseIdentifier: ActivityInfoTableViewCell.reuseIdentifier)
@@ -92,7 +94,8 @@ extension LocationDetailViewController: UITableViewDataSource {
       
     case .recentActivity:
       let cell = tableView.dequeueReusableCell(withIdentifier: ActivityInfoTableViewCell.reuseIdentifier) as! ActivityInfoTableViewCell
-      cell.configure(with: (location?.recentActivities[indexPath.row])!)
+      let activity = (location?.recentActivities[indexPath.row])!
+      cell.configure(with: activity, location: location!)
       return cell
     }
   }
