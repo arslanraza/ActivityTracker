@@ -45,6 +45,7 @@
 		A8A77AC7205A2E74003399A4 /* LocationsApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AC6205A2E74003399A4 /* LocationsApiClient.swift */; };
 		A8A77AC8205A3441003399A4 /* ATLocationCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A09A362059F19B00CEA678 /* ATLocationCore.framework */; };
 		A8A77ACA205A34D7003399A4 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AC9205A34D7003399A4 /* LocationsViewModel.swift */; };
+		A8A77ACD205A37D0003399A4 /* LocationsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77ACC205A37D0003399A4 /* LocationsListViewControllerTests.swift */; };
 		A8B8E93E205A125F007D1C2D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E93D205A125F007D1C2D /* Activity.swift */; };
 		A8B8E940205A1266007D1C2D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E93F205A1266007D1C2D /* Profile.swift */; };
 		A8B8E942205A126B007D1C2D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E941205A126B007D1C2D /* Task.swift */; };
@@ -157,6 +158,7 @@
 		A8A77AC4205A2AB2003399A4 /* LocationFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFeedTests.swift; sourceTree = "<group>"; };
 		A8A77AC6205A2E74003399A4 /* LocationsApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsApiClient.swift; sourceTree = "<group>"; };
 		A8A77AC9205A34D7003399A4 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		A8A77ACC205A37D0003399A4 /* LocationsListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListViewControllerTests.swift; sourceTree = "<group>"; };
 		A8B8E93D205A125F007D1C2D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		A8B8E93F205A1266007D1C2D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		A8B8E941205A126B007D1C2D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 		A8A09A2D2059EE2000CEA678 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A8A77ACB205A37BB003399A4 /* ActivityTracke */,
 				A894D2AF205A0F3000B2AB74 /* ATLocationCoreTests */,
 			);
 			path = Tests;
@@ -451,6 +454,14 @@
 				A8A77AC4205A2AB2003399A4 /* LocationFeedTests.swift */,
 			);
 			path = LocationFeed;
+			sourceTree = "<group>";
+		};
+		A8A77ACB205A37BB003399A4 /* ActivityTracke */ = {
+			isa = PBXGroup;
+			children = (
+				A8A77ACC205A37D0003399A4 /* LocationsListViewControllerTests.swift */,
+			);
+			path = ActivityTracke;
 			sourceTree = "<group>";
 		};
 		D61C074B8507612740601B3E /* Frameworks */ = {
@@ -896,6 +907,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A894D2B1205A0F5800B2AB74 /* LocationTests.swift in Sources */,
+				A8A77ACD205A37D0003399A4 /* LocationsListViewControllerTests.swift in Sources */,
 				A894D2A9205A087F00B2AB74 /* LocationSummaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
