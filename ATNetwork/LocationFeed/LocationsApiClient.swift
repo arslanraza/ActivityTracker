@@ -9,7 +9,7 @@
 import Foundation
 import ATLocationCore
 
-protocol LocationsService {
+public protocol LocationsService {
   func getLocations(completion: @escaping (Result<[LocationSummary], APIError>) -> Void)
   func getLocationDetail(locationID: Int, completion: @escaping (Result<Location, APIError>) -> Void)
 }
@@ -27,7 +27,7 @@ public class LocationsAPIClient: APIClient, LocationsService {
   
   // MARK: Public Methods
   
-  func getLocations(completion: @escaping (Result<[LocationSummary], APIError>) -> Void) {
+  public func getLocations(completion: @escaping (Result<[LocationSummary], APIError>) -> Void) {
     let endpoint = LocationFeed.locations
     let request = endpoint.request
     
@@ -39,7 +39,7 @@ public class LocationsAPIClient: APIClient, LocationsService {
     }, completion: completion)
   }
   
-  func getLocationDetail(locationID: Int, completion: @escaping (Result<Location, APIError>) -> Void) {
+  public func getLocationDetail(locationID: Int, completion: @escaping (Result<Location, APIError>) -> Void) {
     let endpoint = LocationFeed.locationDetail(id: locationID)
     let request = endpoint.request
     
