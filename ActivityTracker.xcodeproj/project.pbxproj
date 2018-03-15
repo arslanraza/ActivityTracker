@@ -51,6 +51,8 @@
 		A8A77AD6205A3A65003399A4 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AD4205A3A65003399A4 /* LocationTableViewCell.swift */; };
 		A8A77AD7205A3A65003399A4 /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A77AD5205A3A65003399A4 /* LocationTableViewCell.xib */; };
 		A8A77AD9205A3E24003399A4 /* LocationTableViewCell+Loctaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AD8205A3E24003399A4 /* LocationTableViewCell+Loctaion.swift */; };
+		A8A77ADB205A44CC003399A4 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77ADA205A44CC003399A4 /* LocationDetailViewController.swift */; };
+		A8A77ADD205A4596003399A4 /* LocationDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77ADC205A4596003399A4 /* LocationDetailViewControllerTests.swift */; };
 		A8B8E93E205A125F007D1C2D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E93D205A125F007D1C2D /* Activity.swift */; };
 		A8B8E940205A1266007D1C2D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E93F205A1266007D1C2D /* Profile.swift */; };
 		A8B8E942205A126B007D1C2D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E941205A126B007D1C2D /* Task.swift */; };
@@ -169,6 +171,8 @@
 		A8A77AD4205A3A65003399A4 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 		A8A77AD5205A3A65003399A4 /* LocationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
 		A8A77AD8205A3E24003399A4 /* LocationTableViewCell+Loctaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationTableViewCell+Loctaion.swift"; sourceTree = "<group>"; };
+		A8A77ADA205A44CC003399A4 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
+		A8A77ADC205A4596003399A4 /* LocationDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		A8B8E93D205A125F007D1C2D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		A8B8E93F205A1266007D1C2D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		A8B8E941205A126B007D1C2D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -383,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				A8A09A2F2059EF5100CEA678 /* LocationsListViewController.swift */,
+				A8A77ADA205A44CC003399A4 /* LocationDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -407,7 +412,7 @@
 		A8A09A2D2059EE2000CEA678 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				A8A77ACB205A37BB003399A4 /* ActivityTracke */,
+				A8A77ACB205A37BB003399A4 /* ActivityTracker */,
 				A894D2AF205A0F3000B2AB74 /* ATLocationCoreTests */,
 			);
 			path = Tests;
@@ -469,12 +474,13 @@
 			path = LocationFeed;
 			sourceTree = "<group>";
 		};
-		A8A77ACB205A37BB003399A4 /* ActivityTracke */ = {
+		A8A77ACB205A37BB003399A4 /* ActivityTracker */ = {
 			isa = PBXGroup;
 			children = (
 				A8A77ACC205A37D0003399A4 /* LocationsListViewControllerTests.swift */,
+				A8A77ADC205A4596003399A4 /* LocationDetailViewControllerTests.swift */,
 			);
-			path = ActivityTracke;
+			path = ActivityTracker;
 			sourceTree = "<group>";
 		};
 		A8A77ACE205A39E3003399A4 /* Utilities */ = {
@@ -928,6 +934,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A77ADB205A44CC003399A4 /* LocationDetailViewController.swift in Sources */,
 				A8A77AD9205A3E24003399A4 /* LocationTableViewCell+Loctaion.swift in Sources */,
 				A8A77AD6205A3A65003399A4 /* LocationTableViewCell.swift in Sources */,
 				A8A09A302059EF5100CEA678 /* LocationsListViewController.swift in Sources */,
@@ -942,6 +949,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A77ADD205A4596003399A4 /* LocationDetailViewControllerTests.swift in Sources */,
 				A894D2B1205A0F5800B2AB74 /* LocationTests.swift in Sources */,
 				A8A77ACD205A37D0003399A4 /* LocationsListViewControllerTests.swift in Sources */,
 				A894D2A9205A087F00B2AB74 /* LocationSummaryTests.swift in Sources */,

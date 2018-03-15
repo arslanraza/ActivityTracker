@@ -39,11 +39,42 @@
                     <navigationItem key="navigationItem" title="Locations" id="pZY-E0-Qm0"/>
                     <connections>
                         <outlet property="tableView" destination="kW6-yN-gNd" id="aH8-0s-qaH"/>
+                        <segue destination="GF9-tK-6yj" kind="show" id="Kxw-84-Tw5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1362" y="134"/>
+        </scene>
+        <!--Location Detail View Controller-->
+        <scene sceneID="DB5-sZ-y2x">
+            <objects>
+                <viewController storyboardIdentifier="LocationDetailViewController" id="GF9-tK-6yj" customClass="LocationDetailViewController" customModule="ActivityTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ctH-zD-rd7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TZE-IP-eQv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TZE-IP-eQv" firstAttribute="top" secondItem="rMr-8D-zfW" secondAttribute="top" id="NPi-Bo-whh"/>
+                            <constraint firstItem="TZE-IP-eQv" firstAttribute="leading" secondItem="rMr-8D-zfW" secondAttribute="leading" id="Xfc-bq-xke"/>
+                            <constraint firstItem="rMr-8D-zfW" firstAttribute="bottom" secondItem="TZE-IP-eQv" secondAttribute="bottom" id="aGP-gy-BNK"/>
+                            <constraint firstItem="rMr-8D-zfW" firstAttribute="trailing" secondItem="TZE-IP-eQv" secondAttribute="trailing" id="zPx-tU-3VJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rMr-8D-zfW"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="TZE-IP-eQv" id="5WD-u4-cTv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1An-HR-SQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2153" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WNj-PU-RyH">
