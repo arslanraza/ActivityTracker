@@ -70,4 +70,9 @@ extension APIClient {
     }
     task.resume()
   }
+  
+  public func cancel() {
+    session.invalidateAndCancel()
+  }
+  
 }
