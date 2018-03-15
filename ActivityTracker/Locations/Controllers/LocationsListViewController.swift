@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ATLocationCore
 
 class LocationsListViewController: UIViewController {
   
@@ -14,15 +15,27 @@ class LocationsListViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   
   // MARK: Properties
-  let viewModel = LocationsViewModel()
+  fileprivate let viewModel = LocationsViewModel()
+  fileprivate var locations: [LocationSummary] = []
   
   // MARK: Life Cycle Methods
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    tableView.register(LocationTableViewCell.nib, forCellReuseIdentifier: LocationTableViewCell.reuseIdentifier)
+    tableView.estimatedRowHeight = 110
+    
     viewModel.locationsDidLoadCallBack = { [weak self] locations, error in
-//      guard let strongSelf = self else { return }
-//      print("Fetched Locations: \(locations)")
+      guard let strongSelf = self,
+        error == nil else {
+          // Display Error message
+          return
+      }
+      
+      DispatchQueue.main.async {
+        strongSelf.locations = locations
+        strongSelf.tableView.reloadData()
+      }      
     }
     
     viewModel.getLocations()
@@ -44,4 +57,25 @@ class LocationsListViewController: UIViewController {
    }
    */
   
+}
+
+extension LocationsListViewController: UITableViewDataSource {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return locations.count
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: LocationTableViewCell.reuseIdentifier) as! LocationTableViewCell
+    return cell
+  }
+}
+
+extension LocationsListViewController: UITableViewDelegate {
+  
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return UITableViewAutomaticDimension
+  }
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
+  }
 }

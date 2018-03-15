@@ -46,6 +46,10 @@
 		A8A77AC8205A3441003399A4 /* ATLocationCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A09A362059F19B00CEA678 /* ATLocationCore.framework */; };
 		A8A77ACA205A34D7003399A4 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AC9205A34D7003399A4 /* LocationsViewModel.swift */; };
 		A8A77ACD205A37D0003399A4 /* LocationsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77ACC205A37D0003399A4 /* LocationsListViewControllerTests.swift */; };
+		A8A77AD1205A3A08003399A4 /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AD0205A3A08003399A4 /* UITableViewCell+ReuseIdentifier.swift */; };
+		A8A77AD3205A3A13003399A4 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AD2205A3A13003399A4 /* UIView+Nib.swift */; };
+		A8A77AD6205A3A65003399A4 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AD4205A3A65003399A4 /* LocationTableViewCell.swift */; };
+		A8A77AD7205A3A65003399A4 /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A77AD5205A3A65003399A4 /* LocationTableViewCell.xib */; };
 		A8B8E93E205A125F007D1C2D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E93D205A125F007D1C2D /* Activity.swift */; };
 		A8B8E940205A1266007D1C2D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E93F205A1266007D1C2D /* Profile.swift */; };
 		A8B8E942205A126B007D1C2D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E941205A126B007D1C2D /* Task.swift */; };
@@ -159,6 +163,10 @@
 		A8A77AC6205A2E74003399A4 /* LocationsApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsApiClient.swift; sourceTree = "<group>"; };
 		A8A77AC9205A34D7003399A4 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		A8A77ACC205A37D0003399A4 /* LocationsListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListViewControllerTests.swift; sourceTree = "<group>"; };
+		A8A77AD0205A3A08003399A4 /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
+		A8A77AD2205A3A13003399A4 /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		A8A77AD4205A3A65003399A4 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		A8A77AD5205A3A65003399A4 /* LocationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
 		A8B8E93D205A125F007D1C2D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		A8B8E93F205A1266007D1C2D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		A8B8E941205A126B007D1C2D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -339,6 +347,7 @@
 			children = (
 				A8A09A082059E85000CEA678 /* AppDelegate.swift */,
 				A8A09A0C2059E85000CEA678 /* Main.storyboard */,
+				A8A77ACE205A39E3003399A4 /* Utilities */,
 				A8A09A282059ED9B00CEA678 /* Locations */,
 				A8A09A0F2059E85000CEA678 /* Assets.xcassets */,
 				A8A09A112059E85000CEA678 /* LaunchScreen.storyboard */,
@@ -387,6 +396,8 @@
 		A8A09A2B2059EDAF00CEA678 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A8A77AD4205A3A65003399A4 /* LocationTableViewCell.swift */,
+				A8A77AD5205A3A65003399A4 /* LocationTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -462,6 +473,23 @@
 				A8A77ACC205A37D0003399A4 /* LocationsListViewControllerTests.swift */,
 			);
 			path = ActivityTracke;
+			sourceTree = "<group>";
+		};
+		A8A77ACE205A39E3003399A4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A8A77ACF205A39ED003399A4 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A8A77ACF205A39ED003399A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A8A77AD0205A3A08003399A4 /* UITableViewCell+ReuseIdentifier.swift */,
+				A8A77AD2205A3A13003399A4 /* UIView+Nib.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D61C074B8507612740601B3E /* Frameworks */ = {
@@ -682,6 +710,7 @@
 			files = (
 				A8A09A132059E85000CEA678 /* LaunchScreen.storyboard in Resources */,
 				A8A09A102059E85000CEA678 /* Assets.xcassets in Resources */,
+				A8A77AD7205A3A65003399A4 /* LocationTableViewCell.xib in Resources */,
 				A8A09A0E2059E85000CEA678 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -896,9 +925,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A77AD6205A3A65003399A4 /* LocationTableViewCell.swift in Sources */,
 				A8A09A302059EF5100CEA678 /* LocationsListViewController.swift in Sources */,
 				A8A77ACA205A34D7003399A4 /* LocationsViewModel.swift in Sources */,
 				A8A09A092059E85000CEA678 /* AppDelegate.swift in Sources */,
+				A8A77AD3205A3A13003399A4 /* UIView+Nib.swift in Sources */,
+				A8A77AD1205A3A08003399A4 /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
