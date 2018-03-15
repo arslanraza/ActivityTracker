@@ -13,24 +13,19 @@ import ATLocationCore
 class LocationsViewModel {
   
   // MARK: Custom Callback
-  typealias LocationsDidLoadCallBack = ([LocationSummary], APIError?) -> Void
+  typealias LocationsCompletionBlock = ([LocationSummary], APIError?) -> Void
   
   // MARK: Properties
   var locations: [LocationSummary] = []
   let apiClient: LocationsService = LocationsAPIClient()
   
-  var locationsDidLoadCallBack: LocationsDidLoadCallBack?
-  
-  func getLocations() {
-    apiClient.getLocations { [weak self] result in
-      guard let strongSelf = self else { return }
-      
+  func getLocations(completion: LocationsCompletionBlock?) {
+    apiClient.getLocations { result in
       switch result {
       case .success(let locations):
-        strongSelf.locationsDidLoadCallBack?(locations, nil)
-        
+        completion?(locations, nil)
       case.failure(let error):
-        strongSelf.locationsDidLoadCallBack?([], error)
+        completion?([], error)
       }
     }
   }

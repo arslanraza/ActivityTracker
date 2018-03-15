@@ -17,6 +17,7 @@ class LocationDetailViewControllerTests: QuickSpec {
       
       context("when displayed", {
         let sut = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LocationDetailViewController") as! LocationDetailViewController
+        sut.locationID = 0
         let _ = sut.view
         it("should have a tableView", closure: {
           expect(sut.tableView).notTo(beNil())

@@ -14,23 +14,18 @@ import ATLocationCore
 class LocationDetailViewModel {
   
   // MARK: Custom Callback
-  typealias LocationDetailFinishedLoadingCallBack = (Location?, APIError?) -> Void
+  typealias LocationDetailCompletionBlock = (Location?, APIError?) -> Void
   
   // MARK: Properties
   let apiClient: LocationsService = LocationsAPIClient()
   
-  var locationDetailFinishedLoading: LocationDetailFinishedLoadingCallBack?
-  
-  func getLocationDetail(for locationID: Int) {
-    apiClient.getLocationDetail(locationID: locationID) { [weak self] result in
-      guard let strongSelf = self else { return }
-      
+  func getLocationDetail(for locationID: Int, completion: LocationDetailCompletionBlock?) {
+    apiClient.getLocationDetail(locationID: locationID) { result in
       switch result {
       case .success(let location):
-        strongSelf.locationDetailFinishedLoading?(location, nil)
-        
+        completion?(location, nil)
       case.failure(let error):
-        strongSelf.locationDetailFinishedLoading?(nil, error)
+        completion?(nil, error)
       }
     }
   }

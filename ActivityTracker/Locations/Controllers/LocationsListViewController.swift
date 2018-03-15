@@ -31,21 +31,7 @@ class LocationsListViewController: UIViewController {
     tableView.register(LocationTableViewCell.nib, forCellReuseIdentifier: LocationTableViewCell.reuseIdentifier)
     tableView.estimatedRowHeight = 110
     
-    // ViewModel Observers
-    viewModel.locationsDidLoadCallBack = { [weak self] locations, error in
-      guard let strongSelf = self,
-        error == nil else {
-          // Display Error message
-          return
-      }
-      
-      DispatchQueue.main.async {
-        strongSelf.locations = locations
-        strongSelf.tableView.reloadData()
-      }      
-    }
-    
-    viewModel.getLocations()
+    refreshUI()    
   }
   
   // MARK: - Navigation
@@ -59,6 +45,21 @@ class LocationsListViewController: UIViewController {
   }
   
   // MARK: Private Methods
+  
+  private func refreshUI() {
+    viewModel.getLocations(completion: { [weak self] locations, error in
+      guard let strongSelf = self,
+        error == nil else {
+          // Display Error message
+          return
+      }
+      
+      DispatchQueue.main.async {
+        strongSelf.locations = locations
+        strongSelf.tableView.reloadData()
+      }
+    })
+  }
   
   private func showLocationDetail(for location: LocationSummary) {
     selectedLocation = location
