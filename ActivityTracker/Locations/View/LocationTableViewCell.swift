@@ -14,6 +14,7 @@ class LocationTableViewCell: UITableViewCell {
   // MARK: Outlets
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var mapView: MKMapView!
+  @IBOutlet weak var actionButton: UIButton!
   
   // MARK: LifeCycle Methods
   override func awakeFromNib() {

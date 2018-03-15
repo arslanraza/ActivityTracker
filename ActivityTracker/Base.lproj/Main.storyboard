@@ -39,7 +39,7 @@
                     <navigationItem key="navigationItem" title="Locations" id="pZY-E0-Qm0"/>
                     <connections>
                         <outlet property="tableView" destination="kW6-yN-gNd" id="aH8-0s-qaH"/>
-                        <segue destination="GF9-tK-6yj" kind="show" id="Kxw-84-Tw5"/>
+                        <segue destination="GF9-tK-6yj" kind="show" identifier="locationDetail" id="Kxw-84-Tw5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

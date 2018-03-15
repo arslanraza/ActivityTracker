@@ -53,6 +53,7 @@
 		A8A77AD9205A3E24003399A4 /* LocationTableViewCell+Loctaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77AD8205A3E24003399A4 /* LocationTableViewCell+Loctaion.swift */; };
 		A8A77ADB205A44CC003399A4 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77ADA205A44CC003399A4 /* LocationDetailViewController.swift */; };
 		A8A77ADD205A4596003399A4 /* LocationDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77ADC205A4596003399A4 /* LocationDetailViewControllerTests.swift */; };
+		A8A77ADF205A469D003399A4 /* LocationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A77ADE205A469D003399A4 /* LocationDetailViewModel.swift */; };
 		A8B8E93E205A125F007D1C2D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E93D205A125F007D1C2D /* Activity.swift */; };
 		A8B8E940205A1266007D1C2D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E93F205A1266007D1C2D /* Profile.swift */; };
 		A8B8E942205A126B007D1C2D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B8E941205A126B007D1C2D /* Task.swift */; };
@@ -173,6 +174,7 @@
 		A8A77AD8205A3E24003399A4 /* LocationTableViewCell+Loctaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationTableViewCell+Loctaion.swift"; sourceTree = "<group>"; };
 		A8A77ADA205A44CC003399A4 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 		A8A77ADC205A4596003399A4 /* LocationDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		A8A77ADE205A469D003399A4 /* LocationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewModel.swift; sourceTree = "<group>"; };
 		A8B8E93D205A125F007D1C2D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		A8B8E93F205A1266007D1C2D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		A8B8E941205A126B007D1C2D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				A8A77AC9205A34D7003399A4 /* LocationsViewModel.swift */,
+				A8A77ADE205A469D003399A4 /* LocationDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -935,6 +938,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8A77ADB205A44CC003399A4 /* LocationDetailViewController.swift in Sources */,
+				A8A77ADF205A469D003399A4 /* LocationDetailViewModel.swift in Sources */,
 				A8A77AD9205A3E24003399A4 /* LocationTableViewCell+Loctaion.swift in Sources */,
 				A8A77AD6205A3A65003399A4 /* LocationTableViewCell.swift in Sources */,
 				A8A09A302059EF5100CEA678 /* LocationsListViewController.swift in Sources */,

@@ -21,13 +21,19 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <mapView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="hybrid" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVa-PU-uMy">
-                        <rect key="frame" x="20" y="0.5" width="334" height="99"/>
+                        <rect key="frame" x="20" y="0.0" width="334" height="99"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="BVa-PU-uMy" secondAttribute="height" multiplier="334:99" id="ulX-sA-1rI"/>
                         </constraints>
                     </mapView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rur-gS-0T9">
+                        <rect key="frame" x="20" y="0.0" width="334" height="99"/>
+                        <connections>
+                            <action selector="tappedLocation:" destination="-2" eventType="touchUpInside" id="NeH-hg-Uhk"/>
+                        </connections>
+                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHN-C9-qTR">
-                        <rect key="frame" x="30" y="65.5" width="134" height="24"/>
+                        <rect key="frame" x="30" y="65" width="134" height="24"/>
                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -38,14 +44,19 @@
                 <constraints>
                     <constraint firstItem="yHN-C9-qTR" firstAttribute="leading" secondItem="BVa-PU-uMy" secondAttribute="leading" constant="10" id="AgT-h7-aMc"/>
                     <constraint firstItem="yHN-C9-qTR" firstAttribute="bottom" secondItem="BVa-PU-uMy" secondAttribute="bottom" constant="-10" id="EQA-lp-xAj"/>
+                    <constraint firstItem="Rur-gS-0T9" firstAttribute="width" secondItem="BVa-PU-uMy" secondAttribute="width" id="EgT-mt-Utg"/>
+                    <constraint firstItem="Rur-gS-0T9" firstAttribute="centerY" secondItem="BVa-PU-uMy" secondAttribute="centerY" id="ccp-EU-Nz6"/>
                     <constraint firstItem="BVa-PU-uMy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="hRO-VK-Mfb"/>
                     <constraint firstAttribute="trailing" secondItem="BVa-PU-uMy" secondAttribute="trailing" constant="20" id="i3f-5G-ycc"/>
                     <constraint firstAttribute="bottom" secondItem="BVa-PU-uMy" secondAttribute="bottom" priority="999" constant="20" id="iRq-45-pD8"/>
+                    <constraint firstItem="Rur-gS-0T9" firstAttribute="centerX" secondItem="BVa-PU-uMy" secondAttribute="centerX" id="jrc-wa-ngB"/>
+                    <constraint firstItem="Rur-gS-0T9" firstAttribute="height" secondItem="BVa-PU-uMy" secondAttribute="height" id="q7J-D4-rYI"/>
                     <constraint firstItem="BVa-PU-uMy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yyg-uP-hZZ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="actionButton" destination="Rur-gS-0T9" id="elJ-1o-fk7"/>
                 <outlet property="mapView" destination="BVa-PU-uMy" id="juX-tM-OUm"/>
                 <outlet property="titleLabel" destination="yHN-C9-qTR" id="c2g-eM-8UU"/>
             </connections>

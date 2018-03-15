@@ -9,12 +9,15 @@
 import UIKit
 
 class LocationDetailViewController: UIViewController {
-  
+  // MARK: Outlets
   @IBOutlet weak var tableView: UITableView!
+  
+  // MARK: properties
+  var locationID: Int?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    // Do any additional setup after loading the view.
+    precondition(locationID != nil, "Location id should never be nil")
   }
   
   override func didReceiveMemoryWarning() {

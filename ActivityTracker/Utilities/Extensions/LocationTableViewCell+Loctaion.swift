@@ -12,7 +12,7 @@ import MapKit
 
 extension LocationTableViewCell {
   
-  func configure(with locationSummary: LocationSummary) {
+  func configure(with locationSummary: LocationSummary, indexPath: IndexPath) {
     titleLabel.text = locationSummary.displayName
     mapView.layer.cornerRadius = 8
     
@@ -30,6 +30,10 @@ extension LocationTableViewCell {
     let annotation = MKPointAnnotation()
     annotation.coordinate = location
     mapView.addAnnotation(annotation)
+    
+    // Setting the tag in order to retrive the cell index
+    actionButton.tag = indexPath.row
+    
   }
   
 }

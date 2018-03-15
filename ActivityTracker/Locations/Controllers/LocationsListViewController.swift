@@ -17,14 +17,21 @@ class LocationsListViewController: UIViewController {
   // MARK: Properties
   fileprivate let viewModel = LocationsViewModel()
   fileprivate var locations: [LocationSummary] = []
+  fileprivate var selectedLocation: LocationSummary?
+  
+  fileprivate enum Segue: String {
+    case locationDetail
+  }
   
   // MARK: Life Cycle Methods
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    // TableView Configurations
     tableView.register(LocationTableViewCell.nib, forCellReuseIdentifier: LocationTableViewCell.reuseIdentifier)
     tableView.estimatedRowHeight = 110
     
+    // ViewModel Observers
     viewModel.locationsDidLoadCallBack = { [weak self] locations, error in
       guard let strongSelf = self,
         error == nil else {
@@ -41,21 +48,27 @@ class LocationsListViewController: UIViewController {
     viewModel.getLocations()
   }
   
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  // MARK: - Navigation
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == Segue.locationDetail.rawValue,
+      let locationDetailController = segue.destination as? LocationDetailViewController,
+      let _ = selectedLocation {
+      locationDetailController.locationID = selectedLocation?.id
+    }
   }
   
+  // MARK: Private Methods
   
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destinationViewController.
-   // Pass the selected object to the new view controller.
-   }
-   */
+  private func showLocationDetail(for location: LocationSummary) {
+    selectedLocation = location
+    performSegue(withIdentifier: Segue.locationDetail.rawValue, sender: self)
+  }
+  
+  // MARK: Actions
+  @IBAction func tappedLocation(_ sender: UIButton) {
+    showLocationDetail(for: locations[sender.tag])
+  }
   
 }
 
@@ -66,7 +79,7 @@ extension LocationsListViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: LocationTableViewCell.reuseIdentifier) as! LocationTableViewCell
-    cell.configure(with: locations[indexPath.row])
+    cell.configure(with: locations[indexPath.row], indexPath: indexPath)
     return cell
   }
 }
@@ -75,10 +88,6 @@ extension LocationsListViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return UITableViewAutomaticDimension
-  }
-  
-  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    tableView.deselectRow(at: indexPath, animated: true)
   }
   
 }
