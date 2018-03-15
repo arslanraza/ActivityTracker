@@ -38,12 +38,12 @@ class LocationFeedTests: QuickSpec {
       })
       
       context("when created for image", {
-        let imagePath = "test-image.jpg"
+        let imagePath = "/test-image.jpg"
         let sutLocations = LocationFeed.image(path: imagePath)
         
         it("should have correct url path", closure: {
           
-          let expectedURL = "https://s3-ap-southeast-2.amazonaws.com/ios-code-test/v2/\(imagePath)"
+          let expectedURL = "https://s3-ap-southeast-2.amazonaws.com/ios-code-test/v2\(imagePath)"
           expect(sutLocations.request.url?.absoluteString).to(equal(expectedURL))
         })
       })

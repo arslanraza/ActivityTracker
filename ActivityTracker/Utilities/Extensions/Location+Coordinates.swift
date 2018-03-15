@@ -16,8 +16,6 @@ extension Location {
       let lon = Double(lan) else {
         return CLLocationCoordinate2D()
     }
-    
     return CLLocationCoordinate2D(latitude: lat, longitude: lon)
-  } 
-  
+  }
 }

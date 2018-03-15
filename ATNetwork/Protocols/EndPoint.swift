@@ -15,13 +15,13 @@ protocol EndPoint {
 
 extension EndPoint {
   
-  var urlComponents: URLComponents {
+  public var urlComponents: URLComponents {
     var components = URLComponents(string: base)!
     components.path = path
     return components
   }
   
-  var request: URLRequest {
+  public var request: URLRequest {
     let url = urlComponents.url!
     return URLRequest(url: url)
   }

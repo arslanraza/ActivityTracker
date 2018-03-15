@@ -36,7 +36,7 @@ extension LocationFeed: EndPoint {
     case .locationDetail(let id):
       return pathPrefix.appending("/location/\(id).json")
     case .image(let imagePath):
-      return pathPrefix.appending("/\(imagePath)")
+      return pathPrefix.appending("\(imagePath)")
     }
   }
 }

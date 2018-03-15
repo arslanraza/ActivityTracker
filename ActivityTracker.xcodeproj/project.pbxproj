@@ -545,8 +545,8 @@
 				A8A77AD0205A3A08003399A4 /* UIView+ReuseIdentifier.swift */,
 				A8268E08205A6A3500F8DF78 /* Location+Coordinates.swift */,
 				A8477AAC205A9C440067380A /* String+Parameters.swift */,
-				A8477AAE205AA1E30067380A /* ActivityInfoTableViewCell+Location.swift */,
 				A8B4A7DC205AA37200FEAB9F /* ProfileInfoTableViewCell+Profile.swift */,
+				A8477AAE205AA1E30067380A /* ActivityInfoTableViewCell+Location.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -907,9 +907,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ActivityTracker/Pods-ActivityTracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -10,6 +10,7 @@ end
 target 'ActivityTracker' do
   
   # Pods for ActivityTracker
+  pod 'SDWebImage', '~> 4.0'
   
   target 'ActivityTrackerTests' do
     inherit! :search_paths

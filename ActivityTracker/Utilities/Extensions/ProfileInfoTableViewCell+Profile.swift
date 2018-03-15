@@ -7,11 +7,18 @@
 //
 
 import ATLocationCore
+import ATNetwork
+import SDWebImage
 
 extension ProfileInfoTableViewCell {
   func configure(with profile: Profile) {
     nameLabel.text = profile.firstName
     ratingLabel.text = String(profile.rating)
     descriptionLabel.text = profile.description
+    
+    let feed = LocationFeed.image(path: profile.avatarMiniURL)
+    if let url = feed.request.url {
+      profileImageView.sd_setImage(with: url, completed: nil)
+    }
   }
 }
