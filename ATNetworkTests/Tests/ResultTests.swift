@@ -16,10 +16,10 @@ class ResultTests: QuickSpec {
     describe("A Result") {
       context("when initialized for int", {
         
-        let result = Result<Int, APIError>.success(1)
+        let sut = Result<Int, APIError>.success(1)
         
         it("should match success value", closure: {
-          switch result {
+          switch sut {
           case .success(let value):
             expect(value) == 1
           default: break
@@ -30,10 +30,10 @@ class ResultTests: QuickSpec {
       
       context("when initialized for String", {
         
-        let result = Result<String, APIError>.success("some-test")
+        let sut = Result<String, APIError>.success("some-test")
         
         it("should match success value", closure: {
-          switch result {
+          switch sut {
           case .success(let value):
             expect(value) == "some-test"
           default: break

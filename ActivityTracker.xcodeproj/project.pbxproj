@@ -20,6 +20,7 @@
 		A83330A3205A235200B328F8 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83330A2205A235200B328F8 /* URLSessionProtocol.swift */; };
 		A83330A5205A236400B328F8 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83330A4205A236400B328F8 /* URLSessionDataTaskProtocol.swift */; };
 		A83330A7205A249200B328F8 /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83330A6205A249200B328F8 /* ResultTests.swift */; };
+		A83330A9205A255400B328F8 /* APIErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83330A8205A255400B328F8 /* APIErrorTests.swift */; };
 		A894D2A9205A087F00B2AB74 /* LocationSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A09A5A2059F41700CEA678 /* LocationSummaryTests.swift */; };
 		A894D2AA205A089800B2AB74 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = A8A09A5D2059F4AD00CEA678 /* locations.json */; };
 		A894D2AC205A0B8000B2AB74 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894D2AB205A0B8000B2AB74 /* Location.swift */; };
@@ -116,6 +117,7 @@
 		A83330A2205A235200B328F8 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		A83330A4205A236400B328F8 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
 		A83330A6205A249200B328F8 /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
+		A83330A8205A255400B328F8 /* APIErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTests.swift; sourceTree = "<group>"; };
 		A84C01902059FC1C00B5B51B /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84C01912059FC1C00B5B51B /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A894D2AB205A0B8000B2AB74 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				A83330A6205A249200B328F8 /* ResultTests.swift */,
+				A83330A8205A255400B328F8 /* APIErrorTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -821,6 +824,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A83330A7205A249200B328F8 /* ResultTests.swift in Sources */,
+				A83330A9205A255400B328F8 /* APIErrorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
