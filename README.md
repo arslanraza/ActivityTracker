@@ -58,6 +58,7 @@ This app displays a list of activities on a certain location in Australia
 * Display message when the request fails.
 * Improve transition from Locations list to Location detail view
 * Detail view for Activity and Profile screens so that the Location detail can be more interactive.
+* Additional test coverage for UI
 
 
 

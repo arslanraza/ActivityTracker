@@ -17,7 +17,18 @@ class LocationsViewModel {
   
   // MARK: Properties
   var locations: [LocationSummary] = []
-  let apiClient: LocationsService = LocationsAPIClient()
+//  var apiClient: LocationsService = LocationsAPIClient()
+  let apiClient: LocationsService
+  
+  // MARK: Initializers
+  public init(apiClient: LocationsService) {
+    self.apiClient = apiClient
+  }
+  
+  convenience public init() {
+    self.init(apiClient: LocationsAPIClient())
+  }
+  
   
   func getLocations(completion: LocationsCompletionBlock?) {
     apiClient.getLocations { result in
