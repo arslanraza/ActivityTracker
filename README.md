@@ -34,7 +34,7 @@ This app displays a list of activities on a certain location in Australia
 
 ##### Network
 
-* Defines a generic protocol based APIClient and Result class that carries out the network operation for fetching and uploading the image
+* Defines a generic protocol based APIClient and Result class that carries out the network operations.
 
 ## Unit Tests
 
