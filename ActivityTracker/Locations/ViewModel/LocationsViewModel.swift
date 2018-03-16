@@ -28,7 +28,12 @@ class LocationsViewModel {
     self.init(apiClient: LocationsAPIClient())
   }
   
+  // MARK: Public Methods
   
+  
+  /// Fetches Locations list from server
+  ///
+  /// - Parameter completion: Completion block with 2 parameters. LocationSummary array and optional APIError
   func getLocations(completion: LocationsCompletionBlock?) {
     apiClient.getLocations { result in
       switch result {

@@ -29,6 +29,12 @@ class LocationDetailViewModel {
   }
   
   // MARK: Public Methods
+  
+  /// Fetchs Location detail object for a given location
+  ///
+  /// - Parameters:
+  ///   - locationID: (Int value) To get detail for a specific location
+  ///   - completion: Completion block with 2 optional parameters. Location and APIError
   func getLocationDetail(for locationID: Int, completion: LocationDetailCompletionBlock?) {
     apiClient.getLocationDetail(locationID: locationID) { result in
       switch result {

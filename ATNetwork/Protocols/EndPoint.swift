@@ -8,6 +8,8 @@
 
 import Foundation
 
+
+/// A base EndPoint enum to define the base URL and the path to invoke the network request for
 protocol EndPoint {
   var base: String { get }
   var path: String { get }

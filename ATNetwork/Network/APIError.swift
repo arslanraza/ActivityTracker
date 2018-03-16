@@ -10,6 +10,8 @@ import Foundation
 
 import Foundation
 
+
+/// An enum to represent all possible cases for a network request to fail
 public enum APIError: Error {
   case failed
   case jsonConversionFailed

@@ -8,6 +8,11 @@
 
 import Foundation
 
+
+/// A Generic Object that will be used as a result for all network call
+///
+/// - success: Invoked when request has been done successfully
+/// - failure: Invoked when there is some error during the request i.e No internet or JSON Parsing error
 public enum Result<T, U: Error> {
   case success(T)
   case failure(U)
