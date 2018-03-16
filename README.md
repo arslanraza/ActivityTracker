@@ -44,6 +44,12 @@ This app displays a list of activities on a certain location in Australia
 * Model serialization in **ATLocationCore** framekwork
 * Network operations in **ATNetworkusing** using mock APIClient and and MockURLSession to mimic the behavior of the server.
 
+##### Code Coverage:
+
+* ActivityTracker: 42%
+* ATNetwork: 83%
+* ATLocationCore: 100%
+
 ## 3rd Party frameworks
 
 ##### Following frameworks has been used
