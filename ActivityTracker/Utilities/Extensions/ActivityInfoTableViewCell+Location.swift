@@ -12,10 +12,10 @@ import ATNetwork
 extension ActivityInfoTableViewCell {
   func configure(with activity: Activity, location: Location) {
     
-    let profile = location.profiles.first(where: { $0.id == activity.profileID})
+    let profile = location.profiles.first{ $0.id == activity.profileID }
     
     // Setting the message by extracting the parameters
-    let taskName = location.tasks.first(where: { $0.id == activity.taskID })?.name ?? ""
+    let taskName = location.tasks.first{ $0.id == activity.taskID }?.name ?? ""
     let profileName = profile?.firstName ?? ""
     let parameters: [String: String] = ["profileName" : profileName,
                                         "taskName": taskName]
