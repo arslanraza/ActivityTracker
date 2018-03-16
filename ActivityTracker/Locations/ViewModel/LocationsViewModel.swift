@@ -17,7 +17,6 @@ class LocationsViewModel {
   
   // MARK: Properties
   var locations: [LocationSummary] = []
-//  var apiClient: LocationsService = LocationsAPIClient()
   let apiClient: LocationsService
   
   // MARK: Initializers

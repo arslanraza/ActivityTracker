@@ -1,5 +1,5 @@
 //
-//  LocationsViewModelTests.swift
+//  LocationDetailViewModelTests.swift
 //  ActivityTrackerTests
 //
 //  Created by Arslan Raza on 16/3/18.
@@ -13,29 +13,30 @@ import Nimble
 @testable import ATNetwork
 @testable import ATLocationCore
 
-class LocationsViewModelTests: QuickSpec {
+class LocationDetailViewModelTests: QuickSpec {
+  
   override func spec() {
-    describe("LocationsViewModel") {
+    describe("LocationDetailViewModel") {
       
       context("when initialized", {
         let mockAPIClient = MockLocationAPIClient()
-        let sut = LocationsViewModel(apiClient: mockAPIClient)
+        let sut = LocationDetailViewModel(apiClient: mockAPIClient)
         
         context("for success", {
-          var expectedLocations: [LocationSummary] = []
-          sut.getLocations(completion: { locations, _ in
-            expectedLocations = locations
+          var exectedLocation: Location?
+          sut.getLocationDetail(for: 1, completion: { location, _ in
+            exectedLocation = location
           })
           
-          it("should return locations", closure: {
-            expect(expectedLocations.count).toEventually(equal(10))
+          it("should return location object", closure: {
+            expect(exectedLocation).toNotEventually(beNil())
           })
         })
         
         context("for failure", {
           mockAPIClient.shouldPass = false
           var expectedError: APIError?
-          sut.getLocations(completion: { _, error in
+          sut.getLocationDetail(for: 1, completion: { _, error in
             expectedError = error
           })
           
@@ -47,4 +48,5 @@ class LocationsViewModelTests: QuickSpec {
       })
     }
   }
+  
 }

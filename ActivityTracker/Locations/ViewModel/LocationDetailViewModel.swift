@@ -17,8 +17,18 @@ class LocationDetailViewModel {
   typealias LocationDetailCompletionBlock = (Location?, APIError?) -> Void
   
   // MARK: Properties
-  let apiClient: LocationsService = LocationsAPIClient()
+  let apiClient: LocationsService
   
+  // MARK: Initializers
+  public init(apiClient: LocationsService) {
+    self.apiClient = apiClient
+  }
+  
+  convenience public init() {
+    self.init(apiClient: LocationsAPIClient())
+  }
+  
+  // MARK: Public Methods
   func getLocationDetail(for locationID: Int, completion: LocationDetailCompletionBlock?) {
     apiClient.getLocationDetail(locationID: locationID) { result in
       switch result {
