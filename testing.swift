@@ -1,7 +1,7 @@
 #!/usr/bin/swift
 
 import Foundation
-import ShellOut
+import ShellOut // marathon:https://github.com/JohnSundell/ShellOut.git
 
 //- set -o pipefail && xcodebuild -workspace ActivityTracker.xcworkspace -scheme ActivityTracker -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=11.2,name=iPhone 7' build test | xcpretty -c --test --color || exit 1
 
