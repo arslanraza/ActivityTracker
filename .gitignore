@@ -1,2 +1,5 @@
 ActivityTracker.xcodeproj/xcuserdata
 ActivityTracker.xcworkspace/xcuserdata
+DerivedData
+buildtimes.log
+Pods/Pods.xcodeproj/xcuserdata

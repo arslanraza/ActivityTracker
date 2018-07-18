@@ -644,11 +644,13 @@
 			buildConfigurationList = A8A09A222059E85000CEA678 /* Build configuration list for PBXNativeTarget "ActivityTracker" */;
 			buildPhases = (
 				4061E35F4B63F39B0FA53A3C /* [CP] Check Pods Manifest.lock */,
+				B1F0D40520FD733800344F9F /* ShellScript */,
 				A8A09A012059E85000CEA678 /* Sources */,
 				A8A09A022059E85000CEA678 /* Frameworks */,
 				A8A09A032059E85000CEA678 /* Resources */,
 				86115D70F5FC66D3F100BBC2 /* [CP] Embed Pods Frameworks */,
 				A8A09A502059F19B00CEA678 /* Embed Frameworks */,
+				B1F0D40620FD735E00344F9F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -918,6 +920,32 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATNetworkTests/Pods-ATNetworkTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B1F0D40520FD733800344F9F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"$(date +%s)\" > \"buildtimes.log\"";
+		};
+		B1F0D40620FD735E00344F9F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "startime=$(<buildtimes.log)\nendtime=$(date +%s)\ndeltatime=$((endtime-startime))\nnewline=$'\\n'\necho \"[Start] $startime$newline[End] $endtime$newline[Delta] $deltatime\" > \"buildtimes.log\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
