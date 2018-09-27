@@ -22,11 +22,11 @@ public enum LocationFeed {
 }
 
 extension LocationFeed: EndPoint {
-  var base: String {
+  public var base: String {
     return "https://s3-ap-southeast-2.amazonaws.com"
   }
   
-  var path: String {
+  public var path: String {
     
     let pathPrefix = "/ios-code-test/v2"
     
