@@ -21,7 +21,7 @@ extension MapTableViewCell {
     
     // Center map to the location coordinates
     let location = CLLocationCoordinate2D(latitude: lat, longitude: lon)
-    let region = MKCoordinateRegionMakeWithDistance(location, 800, 800);
+    let region = MKCoordinateRegion.init(center: location, latitudinalMeters: 800, longitudinalMeters: 800);
     mapView.setRegion(region, animated: true)
     
     // Adding a pin on the coordinate points
