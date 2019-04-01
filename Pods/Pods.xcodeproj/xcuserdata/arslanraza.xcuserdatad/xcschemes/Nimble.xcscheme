@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5E269AA9A7FBCB9BFD8EA487B43AE7F9"
+               BlueprintIdentifier = "EB7E8FCA71D8B516F3AF74C876770C14"
                BlueprintName = "Nimble"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Nimble.framework">
