@@ -5,3 +5,6 @@ buildtimes.log
 Pods/Pods.xcodeproj/xcuserdata
 Pods
 .vendor
+
+fastlane/report.xml
+fastlane/test_output
