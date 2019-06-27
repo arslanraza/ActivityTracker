@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='ATNetworkTests.xctest' tests='22' failures='0'>
+  <testsuite name='ActivityTrackerTests.LocationDetailViewControllerTests' tests='1' failures='0'>
+    <testcase classname='ActivityTrackerTests.LocationDetailViewControllerTests' name='LocationDetail_controller__when_displayed__should_have_a_tableView' time='0.005'/>
+  </testsuite>
+  <testsuite name='ActivityTrackerTests.LocationDetailViewModelTests' tests='2' failures='0'>
+    <testcase classname='ActivityTrackerTests.LocationDetailViewModelTests' name='LocationDetailViewModel__when_initialized__for_success__should_return_location_object' time='0.245'/>
+    <testcase classname='ActivityTrackerTests.LocationDetailViewModelTests' name='LocationDetailViewModel__when_initialized__for_failure__should_return_error' time='0.081'/>
+  </testsuite>
+  <testsuite name='ActivityTrackerTests.LocationSummaryTests' tests='3' failures='0'>
+    <testcase classname='ActivityTrackerTests.LocationSummaryTests' name='LocationSummary__after_loading_from_a_json__should_have_data' time='0.001'/>
+    <testcase classname='ActivityTrackerTests.LocationSummaryTests' name='LocationSummary__after_loading_from_a_json__and_when_serialized__array_should_not_be_nil' time='0.001'/>
+    <testcase classname='ActivityTrackerTests.LocationSummaryTests' name='LocationSummary__after_loading_from_a_json__and_when_serialized__should_have_5_elements' time='0.000'/>
+  </testsuite>
+  <testsuite name='ActivityTrackerTests.LocationTests' tests='5' failures='0'>
+    <testcase classname='ActivityTrackerTests.LocationTests' name='A_Location__after_loading_from_a_json__should_have_data' time='0.000'/>
+    <testcase classname='ActivityTrackerTests.LocationTests' name='A_Location__after_loading_from_a_json__and_when_serialized__should_not_be_nil' time='0.001'/>
+    <testcase classname='ActivityTrackerTests.LocationTests' name='A_Location__after_loading_from_a_json__and_when_serialized__should_have_2_worker_ids' time='0.000'/>
+    <testcase classname='ActivityTrackerTests.LocationTests' name='A_Location__after_loading_from_a_json__and_when_serialized__should_have_5_recent_activities' time='0.000'/>
+    <testcase classname='ActivityTrackerTests.LocationTests' name='A_Location__after_loading_from_a_json__and_when_serialized__should_have_4_profiles' time='0.000'/>
+  </testsuite>
+  <testsuite name='ActivityTrackerTests.LocationsListViewControllerTests' tests='1' failures='0'>
+    <testcase classname='ActivityTrackerTests.LocationsListViewControllerTests' name='LocationsList_controller__when_displayed__should_have_a_tableView' time='0.001'/>
+  </testsuite>
+  <testsuite name='ActivityTrackerTests.LocationsViewModelTests' tests='2' failures='0'>
+    <testcase classname='ActivityTrackerTests.LocationsViewModelTests' name='LocationsViewModel__when_initialized__for_success__should_return_locations' time='0.067'/>
+    <testcase classname='ActivityTrackerTests.LocationsViewModelTests' name='LocationsViewModel__when_initialized__for_failure__should_return_error' time='0.001'/>
+  </testsuite>
+  <testsuite name='ATNetworkTests.APIClientTests' tests='2' failures='0'>
+    <testcase classname='ATNetworkTests.APIClientTests' name='APIClient__after_initializing_with_data__should_return_object' time='0.328'/>
+    <testcase classname='ATNetworkTests.APIClientTests' name='APIClient__after_initializing_with_data__should_cancel_if_invalidate_is_called' time='0.001'/>
+  </testsuite>
+  <testsuite name='ATNetworkTests.APIErrorTests' tests='1' failures='0'>
+    <testcase classname='ATNetworkTests.APIErrorTests' name='APIError__when_initialized__should_have_proper_states' time='0.001'/>
+  </testsuite>
+  <testsuite name='ATNetworkTests.LocationFeedTests' tests='3' failures='0'>
+    <testcase classname='ATNetworkTests.LocationFeedTests' name='LocationFeed__when_created_for_locations__should_have_correct_url_path' time='0.001'/>
+    <testcase classname='ATNetworkTests.LocationFeedTests' name='LocationFeed__when_created_for_location_detail__should_have_correct_url_path' time='0.001'/>
+    <testcase classname='ATNetworkTests.LocationFeedTests' name='LocationFeed__when_created_for_image__should_have_correct_url_path' time='0.000'/>
+  </testsuite>
+  <testsuite name='ATNetworkTests.ResultTests' tests='2' failures='0'>
+    <testcase classname='ATNetworkTests.ResultTests' name='A_Result__when_initialized_for_int__should_match_success_value' time='0.001'/>
+    <testcase classname='ATNetworkTests.ResultTests' name='A_Result__when_initialized_for_String__should_match_success_value' time='0.000'/>
+  </testsuite>
+</testsuites>

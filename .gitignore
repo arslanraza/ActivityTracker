@@ -4,4 +4,4 @@ DerivedData
 buildtimes.log
 Pods/Pods.xcodeproj/xcuserdata
 Pods
-
+.vendor
