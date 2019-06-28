@@ -1,9 +1,9 @@
 language: swift
 xcode_project: ActivityTracker.xcworkspace
 xcode_scheme: ActivityTracker
-osx_image: xcode10
-xcode_sdk: iphonesimulator11.2
-os: osx
+osx_image: xcode10.2
+#xcode_sdk: iphonesimulator11.2
+#os: osx
 install:
     - bundle install
 script:
