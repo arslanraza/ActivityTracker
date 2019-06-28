@@ -40,7 +40,7 @@ class LocationsViewModelTests: QuickSpec {
           })
           
           it("should return error", closure: {
-            expect(expectedError!).toEventually(equal(APIError.responseUnsuccessful))
+            expect(expectedError!).toEventually(equal(APIError.responseUnsuccessful), timeout: 5.0)
           })
         })
         

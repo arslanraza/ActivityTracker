@@ -2,11 +2,7 @@ language: swift
 xcode_project: ActivityTracker.xcworkspace
 xcode_scheme: ActivityTracker
 osx_image: xcode10.2
-#xcode_sdk: iphonesimulator11.2
-#os: osx
 install:
     - bundle install
 script:
     - bundle exec fastlane test
-#script:
-#- set -o pipefail && xcodebuild -workspace ActivityTracker.xcworkspace -scheme ActivityTracker -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=11.2,name=iPhone 7' build test | xcpretty -c --test --color || exit 1

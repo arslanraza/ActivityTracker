@@ -8,23 +8,20 @@ def test_pods
 end
 
 target 'ActivityTracker' do
-  
+
   # Pods for ActivityTracker
   pod 'SDWebImage', '~> 4.0'
-  
+
   target 'ActivityTrackerTests' do
     inherit! :search_paths
     # Pods for testing
     test_pods
   end
-  
+
   target 'ATNetworkTests' do
     inherit! :search_paths
     # Pods for testing
     test_pods
   end
-  
+
 end
-
-
-
