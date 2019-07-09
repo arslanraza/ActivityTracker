@@ -18,9 +18,9 @@ default_platform(:ios)
 platform :ios do
 
   cocoapods(
-  clean: true,
-  repo_update: true
-)
+    clean: true,
+    repo_update: true
+  )
 
   desc "Run tests"
   lane :test do |options|

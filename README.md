@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/arslanraza/ActivityTracker.svg?branch=master)](https://travis-ci.org/arslanraza/ActivityTracker)
+[![Build Status](https://travis-ci.org/arslanraza/ActivityTracker.svg?branch=master)](https://travis-ci.org/arslanraza/ActivityTracker)  [![Build Status](https://app.bitrise.io/app/69d5554464297506/status.svg?token=je1Cvq5cp0A25NhFRAXjRA&branch=master)](https://app.bitrise.io/app/69d5554464297506)
 
 # ActivityTracker
 This app displays a list of activities on a certain location in Australia
@@ -65,6 +65,3 @@ This app displays a list of activities on a certain location in Australia
 * Improve transition from Locations list to Location detail view
 * Detail view for Activity and Profile screens so that the Location detail can be more interactive.
 * Additional test coverage for UI
-
-
-
